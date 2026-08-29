@@ -43,3 +43,4 @@ header .bahn{flex-wrap:wrap;row-gap:10px}
 figure{margin:20px 0}
 figure img{display:block;width:100%;height:auto;border:1px solid var(--rand);border-radius:12px}
 figcaption{color:var(--blass);font-size:14px;margin-top:8px}
+figure.schmal img{max-width:360px;margin:0 auto}
