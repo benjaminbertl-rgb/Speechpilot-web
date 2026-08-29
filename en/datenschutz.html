@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — SpeechPilot</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/icon-128.png">
+<link rel="apple-touch-icon" href="/icon-128.png">
+<link rel="alternate" hreflang="de" href="https://speechpilot.vip/datenschutz.html">
+<link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/datenschutz.html">
+<link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/datenschutz.html">
+<link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/datenschutz.html">
+<link rel="stylesheet" href="/stil.css">
+</head>
+<body>
+<header><div class="bahn">
+  <a class="marke" href="/en/"><img src="/favicon-32.png" alt="" width="22" height="22">SpeechPilot</a>
+  <nav><a href="/en/">Home</a><a href="/en/datenschutz.html">Privacy</a><span class="sprachen" aria-label="Language"><a href="/datenschutz.html" hreflang="de">DE</a><a class="aktiv" href="/en/datenschutz.html" hreflang="en">EN</a><a href="/es/datenschutz.html" hreflang="es">ES</a></span></nav>
+</div></header>
+<main class="bahn">
+<h1>Privacy Policy — SpeechPilot</h1>
+<p><em>The German version of this policy is the authoritative one; this translation is
+provided for understanding. The German version is at
+<a href="/datenschutz.html">speechpilot.vip/datenschutz.html</a>.</em></p>
+<p>Last updated: 29 August 2026</p>
+<h2>Controller</h2>
+<p><strong>Benjamin Alexander Bertl</strong>
+<strong>Calle Padre Esteban 29, bj izq</strong>
+<strong>38611 San Isidro, Santa Cruz de Tenerife, Spain</strong>
+<strong>NIE X5979615Y</strong>
+Questions and requests for information: <strong>contact@speechpilot.vip</strong></p>
+<p>Controller within the meaning of the General Data Protection Regulation (GDPR) and of
+the Spanish LOPDGDD.</p>
+<h2>In brief</h2>
+<p>SpeechPilot dictates what is spoken into the input field the cursor is in. Dictated
+texts, macros and lists are not transmitted to the publisher. There is no advertising,
+no tracking, no disclosure and no sale of data.</p>
+<p>If the local language pack is installed, speech recognition also takes place on the
+device — in that case neither audio nor text leaves the computer. Without the pack,
+Google handles recognition. Besides that, the following leave the device: the browser's
+synchronisation of settings and, only when paid features are purchased, payment
+processing. All three are described below.</p>
+<h2>Legal bases</h2>
+<p>The processing of voice input and of the lists you create takes place in order to
+perform the user relationship and at your instigation (Art. 6(1)(b) GDPR). Payment
+processing takes place for the performance of a contract (Art. 6(1)(b) GDPR) and, where
+retention obligations exist, for compliance with legal obligations (Art. 6(1)(c)
+GDPR).</p>
+<h2>What data is processed</h2>
+<h3>1. Voice input</h3>
+<p>When the microphone is switched on, SpeechPilot records via the speech recognition
+built into the browser. Where that recognition takes place depends on whether a local
+language pack is installed:</p>
+<p><strong>With the language pack installed (the default where available).</strong> Chrome
+recognises speech on the device. <strong>Neither the recording nor the recognised text
+leaves the computer.</strong> Whether this route is active is shown in the options under
+“On-device recognition”; the language pack is downloaded there at the press of a button
+(once, about 60 MB per language). It can also be switched off there.</p>
+<p><strong>Without a language pack.</strong> Chrome transmits the recording to Google
+servers for recognition and returns the finished text. This is part of the browser, not
+of the extension. Everything present at the microphone while dictating is recorded.
+Google's privacy policy applies: https://policies.google.com/privacy</p>
+<p>If on-device recognition returns no results, SpeechPilot switches to the second route
+for the current session and points this out with a message.</p>
+<p>In both cases SpeechPilot stores neither the recording nor the recognised text. The
+text is written into the input field and not retained afterwards. The microphone runs
+only while it is switched on.</p>
+<h3>2. Settings and your own lists</h3>
+<p>Stored on the device are: recognition language and switches, the replacement list,
+emoji words, macros (shortcuts and their associated texts), the lists and profiles of
+the bar together with the stored texts and field positions, as well as display settings
+such as position and width.</p>
+<p>Storage takes place in <code>chrome.storage</code>:</p>
+<ul>
+<li><strong><code>storage.local</code></strong> — stays on this device: macros, the bar, usage records, positions.</li>
+<li><strong><code>storage.sync</code></strong> — recognition language, replacement list, emoji words and
+  the switches. Chrome synchronises this area between the user's devices via the
+  signed-in Google account. This too is a function of the browser; the publisher has no
+  access to it.</li>
+</ul>
+<p>All content originates from the user's own entries. Anyone who places no personal data
+in macros or replacements stores none either.</p>
+<h3>3. Content of the visited page</h3>
+<p>SpeechPilot does not read the content of the visited page and does not transmit it
+anywhere. Access is limited to the input field being written into and — for the bar's
+field mapping — to the position of input fields within the page. Password fields and
+fields for payment data are excluded: nothing is read or written there.</p>
+<p>Access takes place only after the user has clicked the extension's icon or pressed the
+keyboard shortcut, and only in the active tab (<code>activeTab</code> permission). The
+extension does not run in the background on all pages.</p>
+<h2>Permissions and what they are for</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>What for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>activeTab</code></td>
+<td>access to the currently visible page, only after the user clicks</td>
+</tr>
+<tr>
+<td><code>scripting</code></td>
+<td>inserting the interface and the dictation into that page</td>
+</tr>
+<tr>
+<td><code>storage</code></td>
+<td>storing settings, lists and macros; also the payment status</td>
+</tr>
+</tbody>
+</table>
+<p>Microphone access is requested by Chrome itself and can be withdrawn at any time in
+the browser settings.</p>
+<h2>Deleting data</h2>
+<p>All stored data is held in the browser profile. It is removed completely when the
+extension is uninstalled. Individual sets can be deleted in the options; there is also
+an export to a file there.</p>
+<h2>Payment processing</h2>
+<p>Paid features are sold via <strong>Lemon Squeezy</strong> (Sold through Link, LLC,
+Salt Lake City, USA). Lemon Squeezy acts as the seller (merchant of record); the purchase
+contract for the paid licence is concluded with that company, which also remits value
+added tax.</p>
+<p><strong>Without a purchase.</strong> Anyone who uses the extension only free of charge
+transmits no data to Lemon Squeezy. The extension does not establish a connection there
+of its own accord.</p>
+<p><strong>When purchasing.</strong> The purchase takes place on Lemon Squeezy's pages.
+The data required for the contract is collected there: email address, payment data and
+the details required for the calculation of tax (in particular the country). Payment
+data is processed by Lemon Squeezy and its payment service providers; the publisher does
+not receive full card details.</p>
+<p><strong>What the publisher sees.</strong> The order data can be viewed in Lemon
+Squeezy's merchant area: email address, time, amount, country and status of the order.
+<em>[To be checked after the first test purchase and the exact scope entered here.]</em></p>
+<p><strong>Activation.</strong> After the purchase a licence key is sent by email. It is
+entered in the extension's options and stored locally there. To verify it, the extension
+sends this key to <code>api.lemonsqueezy.com</code>; for technical reasons the IP address
+is transmitted in the process. Only the licence key and a device identifier are
+transmitted — no dictated texts, no macros, no list content.</p>
+<p><strong>Legal basis.</strong> Performance of a contract under Art. 6(1)(b) GDPR; for
+statutory retention obligations Art. 6(1)(c) GDPR.</p>
+<p><strong>Transfer to the USA.</strong> Lemon Squeezy is based in the United States. The
+transfer is based on the provider's data processing agreement including the EU standard
+contractual clauses:
+https://www.lemonsqueezy.com/dpa</p>
+<p><strong>Further information.</strong>
+Lemon Squeezy — privacy policy: https://www.lemonsqueezy.com/privacy
+Lemon Squeezy — data processing agreement: https://www.lemonsqueezy.com/dpa</p>
+<p><em>[Before publication: check the provider's exact details on retention periods and
+sub-processors and add them here.]</em></p>
+<h2>Recipients</h2>
+<p>Google (account synchronisation, and speech recognition only without an installed
+language pack — both part of the browser) and — only when paid features are purchased —
+Lemon Squeezy as the seller. None beyond these.</p>
+<h2>Limited Use</h2>
+<p>SpeechPilot's use of data meets the requirements of the Chrome Web Store Limited Use
+Policy.</p>
+<h2>Your rights</h2>
+<p>You have the right at any time to:</p>
+<ul>
+<li><strong>Access</strong> to information on whether and which data is processed (Art. 15 GDPR)</li>
+<li><strong>Rectification</strong> of inaccurate data (Art. 16 GDPR)</li>
+<li><strong>Erasure</strong> (Art. 17 GDPR)</li>
+<li><strong>Restriction of processing</strong> (Art. 18 GDPR)</li>
+<li><strong>Data portability</strong> (Art. 20 GDPR)</li>
+<li><strong>Object</strong> to the processing (Art. 21 GDPR)</li>
+</ul>
+<p>You can delete the data stored on the device yourself: via the extension's options
+page or by uninstalling it.</p>
+<p>For access to and erasure of data that has arisen in the course of payment processing,
+a message to contact@speechpilot.vip is sufficient.</p>
+<p><strong>Right to lodge a complaint.</strong> You can lodge a complaint with a data
+protection supervisory authority. The competent authority is the Spanish data protection
+authority:</p>
+<p>Agencia Española de Protección de Datos (AEPD)
+C/ Jorge Juan 6, 28001 Madrid
+https://www.aepd.es</p>
+<p>You can also contact the supervisory authority of your country of residence.</p>
+<h2>Changes</h2>
+<p>Changes to this policy will be published at the same address. The date given above is
+authoritative.</p></main>
+<footer><div class="bahn">
+  SpeechPilot · <a href="/en/datenschutz.html">Privacy</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+</div></footer>
+</body>
+</html>

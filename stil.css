@@ -31,3 +31,10 @@ footer a{color:var(--blass)}
 .hinweis{background:rgba(120,20,20,.22);border-left:3px solid oklch(0.55 0.17 27);padding:11px 14px;border-radius:8px;color:#f0c9c9;font-size:14px}
 
 .marke img{border-radius:5px}
+
+/* Sprachumschalter in der Kopfzeile */
+header .bahn{flex-wrap:wrap;row-gap:10px}
+.sprachen{margin-left:18px;padding-left:18px;border-left:1px solid var(--rand)}
+.sprachen a{margin-left:0;font-size:13px;letter-spacing:.04em}
+.sprachen a + a{margin-left:10px}
+.sprachen a.aktiv{color:var(--hell);font-weight:600}
