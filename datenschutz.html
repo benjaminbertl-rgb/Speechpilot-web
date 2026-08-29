@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datenschutzerklärung — SpeechPilot</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/icon-128.png">
+<link rel="apple-touch-icon" href="/icon-128.png">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<header><div class="bahn">
+  <a class="marke" href="/"><img src="/favicon-32.png" alt="" width="22" height="22">SpeechPilot</a>
+  <nav><a href="/">Start</a><a href="/datenschutz.html">Datenschutz</a></nav>
+</div></header>
+<main class="bahn">
+<h1>Datenschutzerklärung — SpeechPilot</h1>
+<p>Stand: 29. August 2026</p>
+<h2>Verantwortlicher</h2>
+<p><strong>Benjamin Alexander Bertl</strong>
+<strong>Calle Padre Esteban 29, bj izq</strong>
+<strong>38611 San Isidro, Santa Cruz de Tenerife, Spanien</strong>
+<strong>NIE X5979615Y</strong>
+Fragen und Auskunftsersuchen: <strong>contact@speechpilot.vip</strong></p>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und der
+spanischen LOPDGDD.</p>
+<h2>Kurz gefasst</h2>
+<p>SpeechPilot diktiert Gesprochenes in das Eingabefeld, in dem der Cursor
+steht. Diktierte Texte, Makros und Listen werden nicht an den Herausgeber
+übertragen. Es gibt keine Werbung, kein Tracking, keine Weitergabe und
+keinen Verkauf von Daten.</p>
+<p>Ist das lokale Sprachpaket geladen, findet auch die Spracherkennung auf
+dem Gerät statt — dann verlässt weder Ton noch Text den Rechner. Ohne
+Paket übernimmt die Erkennung von Google. Daneben verlassen das Gerät:
+die Browser-Synchronisierung der Einstellungen und, nur beim Kauf
+kostenpflichtiger Funktionen, die Zahlungsabwicklung. Alles drei ist
+unten beschrieben.</p>
+<h2>Rechtsgrundlagen</h2>
+<p>Die Verarbeitung der Spracheingabe und der von Ihnen angelegten Listen
+erfolgt zur Erfüllung des Nutzungsverhältnisses und auf Ihre Veranlassung
+hin (Art. 6 Abs. 1 lit. b DSGVO). Die Zahlungsabwicklung erfolgt zur
+Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) und, soweit
+Aufbewahrungspflichten bestehen, zur Erfüllung rechtlicher Pflichten
+(Art. 6 Abs. 1 lit. c DSGVO).</p>
+<h2>Welche Daten verarbeitet werden</h2>
+<h3>1. Spracheingabe</h3>
+<p>Wird das Mikrofon eingeschaltet, nimmt SpeechPilot über die im Browser
+eingebaute Spracherkennung auf. Wo diese Erkennung stattfindet, hängt
+davon ab, ob ein lokales Sprachpaket geladen ist:</p>
+<p><strong>Mit geladenem Sprachpaket (Standard, sofern verfügbar).</strong> Chrome erkennt
+die Sprache auf dem Gerät. <strong>Weder die Aufnahme noch der erkannte Text
+verlassen den Rechner.</strong> Ob dieser Weg aktiv ist, steht in den Optionen
+unter „Erkennung auf dem Gerät"; das Sprachpaket wird dort auf Knopfdruck
+geladen (einmalig, etwa 60 MB je Sprache). Er lässt sich dort auch
+abschalten.</p>
+<p><strong>Ohne Sprachpaket.</strong> Chrome übermittelt die Aufnahme zur Erkennung an
+Server von Google und liefert den fertigen Text zurück. Das ist
+Bestandteil des Browsers, nicht der Erweiterung. Aufgenommen wird alles,
+was während des Diktierens am Mikrofon anliegt. Es gilt die
+Datenschutzerklärung von Google: https://policies.google.com/privacy</p>
+<p>Liefert die Erkennung auf dem Gerät keine Ergebnisse, wechselt
+SpeechPilot für die laufende Sitzung auf den zweiten Weg und weist mit
+einer Meldung darauf hin.</p>
+<p>In beiden Fällen speichert SpeechPilot weder die Aufnahme noch den
+erkannten Text. Der Text wird in das Eingabefeld geschrieben und danach
+nicht aufbewahrt. Das Mikrofon läuft nur, solange es eingeschaltet ist.</p>
+<h3>2. Einstellungen und eigene Listen</h3>
+<p>Auf dem Gerät gespeichert werden: Erkennungssprache und Schalter,
+Ersetzungsliste, Emoji-Wörter, Makros (Kürzel und die dazugehörigen
+Texte), die Listen und Profile der Leiste samt der gespeicherten Texte und
+Feldpositionen, sowie Anzeigeeinstellungen wie Position und Breite.</p>
+<p>Die Speicherung erfolgt in <code>chrome.storage</code>:</p>
+<ul>
+<li><strong><code>storage.local</code></strong> — bleibt auf diesem Gerät: Makros, Leiste, Benutzungs-
+  vermerke, Positionen.</li>
+<li><strong><code>storage.sync</code></strong> — Erkennungssprache, Ersetzungsliste, Emoji-Wörter und
+  die Schalter. Chrome gleicht diesen Bereich über das angemeldete
+  Google-Konto zwischen den Geräten des Nutzers ab. Auch das ist eine
+  Funktion des Browsers; der Herausgeber hat darauf keinen Zugriff.</li>
+</ul>
+<p>Alle Inhalte stammen aus Eingaben des Nutzers. Wer keine personenbezogenen
+Daten in Makros oder Ersetzungen ablegt, speichert auch keine.</p>
+<h3>3. Inhalte der besuchten Seite</h3>
+<p>SpeechPilot liest den Inhalt der besuchten Seite nicht aus und überträgt
+ihn nirgendwohin. Zugegriffen wird ausschließlich auf das Eingabefeld, in
+das geschrieben wird, und — für die Feldverknüpfung der Leiste — auf die
+Position von Eingabefeldern innerhalb der Seite. Passwortfelder und Felder
+für Zahlungsdaten sind davon ausgenommen: dort wird weder gelesen noch
+geschrieben.</p>
+<p>Ein Zugriff findet erst statt, nachdem der Nutzer das Symbol der
+Erweiterung angeklickt oder das Tastenkürzel gedrückt hat, und nur im
+aktiven Tab (Berechtigung <code>activeTab</code>). Die Erweiterung läuft nicht im
+Hintergrund auf allen Seiten.</p>
+<h2>Berechtigungen und wozu sie dienen</h2>
+<table>
+<thead>
+<tr>
+<th>Berechtigung</th>
+<th>Wofür</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>activeTab</code></td>
+<td>Zugriff auf die gerade sichtbare Seite, erst nach Klick des Nutzers</td>
+</tr>
+<tr>
+<td><code>scripting</code></td>
+<td>die Oberfläche und das Diktat in diese Seite einfügen</td>
+</tr>
+<tr>
+<td><code>storage</code></td>
+<td>Einstellungen, Listen und Makros speichern; außerdem der Zahlungsstatus</td>
+</tr>
+</tbody>
+</table>
+<p>Mikrofonzugriff wird von Chrome selbst abgefragt und kann jederzeit in den
+Browsereinstellungen entzogen werden.</p>
+<h2>Daten löschen</h2>
+<p>Alle gespeicherten Daten liegen im Browserprofil. Sie werden vollständig
+entfernt, wenn die Erweiterung deinstalliert wird. Einzelne Bestände
+lassen sich in den Optionen löschen; dort gibt es auch einen Export als
+Datei.</p>
+<h2>Zahlungsabwicklung</h2>
+<p>Kostenpflichtige Funktionen werden über <strong>Lemon Squeezy</strong> verkauft
+(Sold through Link, LLC, Salt Lake City, USA). Lemon Squeezy tritt dabei
+als Verkäufer auf (Merchant of Record); der Kaufvertrag über die
+kostenpflichtige Lizenz kommt mit diesem Unternehmen zustande, das auch
+die Umsatzsteuer abführt.</p>
+<p><strong>Ohne Kauf.</strong> Wer die Erweiterung nur kostenlos nutzt, übermittelt an
+Lemon Squeezy keine Daten. Die Erweiterung nimmt von sich aus keine
+Verbindung dorthin auf.</p>
+<p><strong>Beim Kauf.</strong> Der Kauf findet auf den Seiten von Lemon Squeezy statt.
+Dort werden die für den Vertrag nötigen Daten erhoben: E-Mail-Adresse,
+Zahlungsdaten und die für die Steuerberechnung erforderlichen Angaben
+(insbesondere das Land). Zahlungsdaten werden von Lemon Squeezy und
+dessen Zahlungsdienstleistern verarbeitet; vollständige Kartendaten
+erhält der Herausgeber nicht.</p>
+<p><strong>Was der Herausgeber sieht.</strong> Im Händlerbereich von Lemon Squeezy sind
+die Bestelldaten einsehbar: E-Mail-Adresse, Zeitpunkt, Betrag, Land und
+Status der Bestellung.
+<em>[Nach dem ersten Testkauf prüfen und den Umfang hier genau eintragen.]</em></p>
+<p><strong>Freischaltung.</strong> Nach dem Kauf wird ein Lizenzschlüssel per E-Mail
+versendet. Er wird in den Optionen der Erweiterung eingetragen und dort
+lokal gespeichert. Zur Prüfung sendet die Erweiterung diesen Schlüssel an
+<code>api.lemonsqueezy.com</code>; dabei wird technisch bedingt die IP-Adresse
+übertragen. Übermittelt werden ausschließlich der Lizenzschlüssel und
+eine Gerätekennung — keine diktierten Texte, keine Makros, keine
+Listeninhalte.</p>
+<p><strong>Rechtsgrundlage.</strong> Vertragserfüllung nach Art. 6 Abs. 1 lit. b DSGVO;
+für gesetzliche Aufbewahrungspflichten Art. 6 Abs. 1 lit. c DSGVO.</p>
+<p><strong>Übermittlung in die USA.</strong> Lemon Squeezy hat seinen Sitz in den
+Vereinigten Staaten. Grundlage der Übermittlung ist der
+Auftragsverarbeitungsvertrag des Anbieters einschließlich der
+EU-Standardvertragsklauseln:
+https://www.lemonsqueezy.com/dpa</p>
+<p><strong>Weitere Informationen.</strong>
+Lemon Squeezy — Datenschutzerklärung: https://www.lemonsqueezy.com/privacy
+Lemon Squeezy — Auftragsverarbeitungsvertrag: https://www.lemonsqueezy.com/dpa</p>
+<p><em>[Vor Veröffentlichung: die genauen Angaben des Anbieters zu Speicherdauer
+und Unterauftragnehmern prüfen und hier ergänzen.]</em></p>
+<h2>Empfänger</h2>
+<p>Google (Kontosynchronisierung, und die Spracherkennung nur ohne geladenes
+Sprachpaket — beides Bestandteil des Browsers) sowie — nur bei Erwerb kostenpflichtiger Funktionen —
+Lemon Squeezy als Verkäufer. Darüber hinaus keine.</p>
+<h2>Limited Use</h2>
+<p>Die Verwendung der Daten durch SpeechPilot erfüllt die Anforderungen der
+Chrome Web Store Limited Use Policy.</p>
+<h2>Ihre Rechte</h2>
+<p>Sie haben jederzeit das Recht auf:</p>
+<ul>
+<li><strong>Auskunft</strong> darüber, ob und welche Daten verarbeitet werden (Art. 15 DSGVO)</li>
+<li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO)</li>
+<li><strong>Löschung</strong> (Art. 17 DSGVO)</li>
+<li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+<li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+<li><strong>Widerspruch</strong> gegen die Verarbeitung (Art. 21 DSGVO)</li>
+</ul>
+<p>Die auf dem Gerät gespeicherten Daten können Sie selbst löschen: über die
+Optionsseite der Erweiterung oder durch Deinstallation.</p>
+<p>Für Auskunft und Löschung von Daten, die bei der Zahlungsabwicklung
+entstanden sind, genügt eine Nachricht an contact@speechpilot.vip.</p>
+<p><strong>Beschwerderecht.</strong> Sie können sich bei einer Datenschutz-Aufsichts-
+behörde beschweren. Zuständig ist die spanische Datenschutzbehörde:</p>
+<p>Agencia Española de Protección de Datos (AEPD)
+C/ Jorge Juan 6, 28001 Madrid
+https://www.aepd.es</p>
+<p>Sie können sich auch an die Aufsichtsbehörde Ihres Wohnsitzlandes wenden.</p>
+<h2>Änderungen</h2>
+<p>Änderungen dieser Erklärung werden unter derselben Adresse veröffentlicht.
+Maßgeblich ist das oben genannte Datum.</p></main>
+<footer><div class="bahn">
+  SpeechPilot · <a href="/datenschutz.html">Datenschutz</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+</div></footer>
+</body>
+</html>

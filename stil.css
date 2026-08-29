@@ -1,0 +1,33 @@
+:root{--grund:#0b1120;--platte:#131c30;--schrift:#c3cee1;--hell:#f2f6fc;--blass:#8fa0bd;--rand:rgba(255,255,255,.12);--akzent:oklch(0.62 0.15 250)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--grund);color:var(--schrift);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+.bahn{max-width:760px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--rand)}
+header .bahn{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:18px;padding-bottom:18px}
+.marke{display:inline-flex;align-items:center;gap:9px;color:var(--hell);font-weight:600;font-size:17px;text-decoration:none}
+nav a{color:var(--blass);text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:var(--hell)}
+h1{color:var(--hell);font-size:34px;line-height:1.25;margin:44px 0 14px}
+h2{color:var(--hell);font-size:21px;margin:38px 0 10px}
+h3{color:var(--hell);font-size:17px;margin:26px 0 8px}
+p{margin:0 0 14px}
+a{color:var(--akzent)}
+ul{padding-left:20px}
+li{margin-bottom:6px}
+strong,b{color:var(--hell)}
+em{color:var(--blass);font-style:normal}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+th,td{border:1px solid var(--rand);padding:8px 11px;text-align:left;vertical-align:top}
+th{color:var(--hell);background:rgba(255,255,255,.04)}
+code,pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
+pre{background:var(--platte);border:1px solid var(--rand);border-radius:9px;padding:14px;overflow-x:auto}
+.vorspann{font-size:19px;color:var(--blass);margin-bottom:26px}
+.kachel{background:var(--platte);border:1px solid var(--rand);border-radius:12px;padding:20px 22px;margin:18px 0}
+.knopf{display:inline-block;background:var(--akzent);color:#fff;text-decoration:none;padding:11px 20px;border-radius:9px;font-weight:600}
+.knopf:hover{filter:brightness(1.12)}
+.luecke{height:52px}
+footer{border-top:1px solid var(--rand);margin-top:64px;padding:22px 0;color:var(--blass);font-size:14px}
+footer a{color:var(--blass)}
+.hinweis{background:rgba(120,20,20,.22);border-left:3px solid oklch(0.55 0.17 27);padding:11px 14px;border-radius:8px;color:#f0c9c9;font-size:14px}
+
+.marke img{border-radius:5px}
