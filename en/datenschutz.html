@@ -23,7 +23,7 @@
 <p><em>The German version of this policy is the authoritative one; this translation is
 provided for understanding. The German version is at
 <a href="/datenschutz.html">speechpilot.vip/datenschutz.html</a>.</em></p>
-<p>Last updated: 29 August 2026</p>
+<p>Last updated: 30 August 2026</p>
 <h2>Controller</h2>
 <p><strong>Benjamin Alexander Bertl</strong>
 <strong>Calle Padre Esteban 29, bj izq</strong>
@@ -66,6 +66,17 @@ for the current session and points this out with a message.</p>
 <p>In both cases SpeechPilot stores neither the recording nor the recognised text. The
 text is written into the input field and not retained afterwards. The microphone runs
 only while it is switched on.</p>
+<p><strong>Where the recording happens.</strong> Recognition runs in the extension's own,
+invisible document, not in the context of the page you are visiting. That page sees
+neither the audio nor the recognised text; all it receives is what is written into its
+input field. The document exists only while you are dictating and is closed when the
+microphone is switched off.</p>
+<p><strong>Microphone permission.</strong> Permission is granted once to the extension
+itself (origin <code>chrome-extension://…</code>), not separately for every page you
+visit. You are asked the first time you switch the microphone on; for that, SpeechPilot
+briefly embeds its own invisible page into the open page, which does nothing but ask
+that question. Permission can be withdrawn at any time in the Chrome settings under
+“Site settings → Microphone”.</p>
 <h3>2. Settings and your own lists</h3>
 <p>Stored on the device are: recognition language and switches, the replacement list,
 emoji words, macros (shortcuts and their associated texts), the lists and profiles of
@@ -88,7 +99,9 @@ field mapping — to the position of input fields within the page. Password fiel
 fields for payment data are excluded: nothing is read or written there.</p>
 <p>Access takes place only after the user has clicked the extension's icon or pressed the
 keyboard shortcut, and only in the active tab (<code>activeTab</code> permission). The
-extension does not run in the background on all pages.</p>
+extension does not run in the background on all pages. If a new page is loaded in the
+same tab while you are dictating, SpeechPilot inserts its interface there again so that
+the dictation is not interrupted; beyond the running session this does not happen.</p>
 <h2>Permissions and what they are for</h2>
 <table>
 <thead>
@@ -110,10 +123,15 @@ extension does not run in the background on all pages.</p>
 <td><code>storage</code></td>
 <td>storing settings, lists and macros; also the payment status</td>
 </tr>
+<tr>
+<td><code>offscreen</code></td>
+<td>running speech recognition outside the page being visited</td>
+</tr>
 </tbody>
 </table>
-<p>Microphone access is requested by Chrome itself and can be withdrawn at any time in
-the browser settings.</p>
+<p>Microphone access is requested by Chrome itself. Permission is granted to the
+extension, not to the individual page, and can be withdrawn at any time in the browser
+settings.</p>
 <h2>Deleting data</h2>
 <p>All stored data is held in the browser profile. It is removed completely when the
 extension is uninstalled. Individual sets can be deleted in the options; there is also
@@ -182,7 +200,7 @@ https://www.aepd.es</p>
 <p>Changes to this policy will be published at the same address. The date given above is
 authoritative.</p></main>
 <footer><div class="bahn">
-  SpeechPilot · <a href="/en/bilder.html">Screenshots</a> · <a href="/en/nutzung.html">Terms</a> · <a href="/en/datenschutz.html">Privacy</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+  © 2026 Benjamin Bertl · <a href="/en/bilder.html">Screenshots</a> · <a href="/en/nutzung.html">Terms</a> · <a href="/en/datenschutz.html">Privacy</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
 </div></footer>
 </body>
 </html>

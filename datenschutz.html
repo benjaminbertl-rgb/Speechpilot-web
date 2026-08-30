@@ -20,7 +20,7 @@
 </div></header>
 <main class="bahn">
 <h1>Datenschutzerklärung — SpeechPilot</h1>
-<p>Stand: 29. August 2026</p>
+<p>Stand: 30. August 2026</p>
 <h2>Verantwortlicher</h2>
 <p><strong>Benjamin Alexander Bertl</strong>
 <strong>Calle Padre Esteban 29, bj izq</strong>
@@ -69,6 +69,18 @@ einer Meldung darauf hin.</p>
 <p>In beiden Fällen speichert SpeechPilot weder die Aufnahme noch den
 erkannten Text. Der Text wird in das Eingabefeld geschrieben und danach
 nicht aufbewahrt. Das Mikrofon läuft nur, solange es eingeschaltet ist.</p>
+<p><strong>Wo aufgenommen wird.</strong> Die Erkennung läuft in einem eigenen, unsichtbaren
+Dokument der Erweiterung, nicht im Kontext der besuchten Seite. Die Seite
+bekommt weder den Ton noch den erkannten Text zu sehen; bei ihr kommt nur
+an, was in ihr Eingabefeld geschrieben wird. Das Dokument besteht nur,
+solange diktiert wird, und wird beim Ausschalten geschlossen.</p>
+<p><strong>Freigabe des Mikrofons.</strong> Die Freigabe wird einmalig für die Erweiterung
+selbst erteilt (Ursprung <code>chrome-extension://…</code>) und nicht für jede besuchte
+Seite einzeln. Gefragt wird beim ersten Einschalten; dafür blendet
+SpeechPilot kurz eine eigene, unsichtbare Seite in die geöffnete Seite ein,
+die nichts anderes tut, als diese Frage zu stellen. Entziehen lässt sich die
+Freigabe jederzeit in den Chrome-Einstellungen unter „Website-Einstellungen
+→ Mikrofon".</p>
 <h3>2. Einstellungen und eigene Listen</h3>
 <p>Auf dem Gerät gespeichert werden: Erkennungssprache und Schalter,
 Ersetzungsliste, Emoji-Wörter, Makros (Kürzel und die dazugehörigen
@@ -94,7 +106,10 @@ geschrieben.</p>
 <p>Ein Zugriff findet erst statt, nachdem der Nutzer das Symbol der
 Erweiterung angeklickt oder das Tastenkürzel gedrückt hat, und nur im
 aktiven Tab (Berechtigung <code>activeTab</code>). Die Erweiterung läuft nicht im
-Hintergrund auf allen Seiten.</p>
+Hintergrund auf allen Seiten. Wird während des Diktierens im selben Tab eine
+neue Seite geladen, fügt SpeechPilot seine Oberfläche dort erneut ein, damit
+das Diktat nicht abbricht; über die laufende Sitzung hinaus geschieht das
+nicht.</p>
 <h2>Berechtigungen und wozu sie dienen</h2>
 <table>
 <thead>
@@ -116,9 +131,14 @@ Hintergrund auf allen Seiten.</p>
 <td><code>storage</code></td>
 <td>Einstellungen, Listen und Makros speichern; außerdem der Zahlungsstatus</td>
 </tr>
+<tr>
+<td><code>offscreen</code></td>
+<td>die Spracherkennung außerhalb der besuchten Seite ausführen</td>
+</tr>
 </tbody>
 </table>
-<p>Mikrofonzugriff wird von Chrome selbst abgefragt und kann jederzeit in den
+<p>Mikrofonzugriff wird von Chrome selbst abgefragt. Die Freigabe gilt der
+Erweiterung, nicht der einzelnen Seite, und kann jederzeit in den
 Browsereinstellungen entzogen werden.</p>
 <h2>Daten löschen</h2>
 <p>Alle gespeicherten Daten liegen im Browserprofil. Sie werden vollständig
@@ -193,7 +213,7 @@ https://www.aepd.es</p>
 <p>Änderungen dieser Erklärung werden unter derselben Adresse veröffentlicht.
 Maßgeblich ist das oben genannte Datum.</p></main>
 <footer><div class="bahn">
-  SpeechPilot · <a href="/bilder.html">Bilder</a> · <a href="/nutzung.html">Nutzung</a> · <a href="/datenschutz.html">Datenschutz</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+  © 2026 Benjamin Bertl · <a href="/bilder.html">Bilder</a> · <a href="/nutzung.html">Nutzung</a> · <a href="/datenschutz.html">Datenschutz</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
 </div></footer>
 </body>
 </html>

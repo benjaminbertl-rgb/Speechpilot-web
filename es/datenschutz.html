@@ -23,7 +23,7 @@
 <p><em>La versión determinante de esta política es la alemana; esta traducción sirve
 para su comprensión. La versión alemana está en
 <a href="/datenschutz.html">speechpilot.vip/datenschutz.html</a>.</em></p>
-<p>Última actualización: 29 de agosto de 2026</p>
+<p>Última actualización: 30 de agosto de 2026</p>
 <h2>Responsable del tratamiento</h2>
 <p><strong>Benjamin Alexander Bertl</strong>
 <strong>Calle Padre Esteban 29, bj izq</strong>
@@ -68,6 +68,16 @@ segunda vía durante la sesión en curso y lo advierte con un aviso.</p>
 <p>En ambos casos, SpeechPilot no almacena ni la grabación ni el texto reconocido. El
 texto se escribe en el campo de entrada y después no se conserva. El micrófono funciona
 solo mientras está activado.</p>
+<p><strong>Dónde se graba.</strong> El reconocimiento se ejecuta en un documento propio e
+invisible de la extensión, no en el contexto de la página visitada. La página no ve ni
+el audio ni el texto reconocido; solo recibe lo que se escribe en su campo de entrada.
+El documento existe únicamente mientras se dicta y se cierra al apagar el micrófono.</p>
+<p><strong>Permiso del micrófono.</strong> El permiso se concede una sola vez a la propia
+extensión (origen <code>chrome-extension://…</code>) y no a cada página visitada por
+separado. Se pregunta la primera vez que se activa el micrófono; para ello SpeechPilot
+inserta brevemente una página propia e invisible en la página abierta, cuya única
+función es formular esa pregunta. El permiso puede retirarse en cualquier momento en
+los ajustes de Chrome, en «Configuración de sitios → Micrófono».</p>
 <h3>2. Ajustes y listas propias</h3>
 <p>En el dispositivo se guardan: el idioma de reconocimiento y los interruptores, la
 lista de sustituciones, las palabras de emoji, las macros (atajos y sus textos
@@ -93,7 +103,9 @@ escribe.</p>
 <p>El acceso se produce únicamente después de que el usuario haya hecho clic en el icono
 de la extensión o haya pulsado el atajo de teclado, y solo en la pestaña activa (permiso
 <code>activeTab</code>). La extensión no se ejecuta en segundo plano en todas las
-páginas.</p>
+páginas. Si durante el dictado se carga una página nueva en la misma pestaña,
+SpeechPilot vuelve a insertar allí su interfaz para que el dictado no se interrumpa;
+más allá de la sesión en curso, esto no ocurre.</p>
 <h2>Permisos y para qué sirven</h2>
 <table>
 <thead>
@@ -115,10 +127,15 @@ páginas.</p>
 <td><code>storage</code></td>
 <td>guardar ajustes, listas y macros; además, el estado del pago</td>
 </tr>
+<tr>
+<td><code>offscreen</code></td>
+<td>ejecutar el reconocimiento de voz fuera de la página visitada</td>
+</tr>
 </tbody>
 </table>
-<p>El acceso al micrófono lo solicita el propio Chrome y puede retirarse en cualquier
-momento en los ajustes del navegador.</p>
+<p>El acceso al micrófono lo solicita el propio Chrome. El permiso se concede a la
+extensión, no a cada página, y puede retirarse en cualquier momento en los ajustes del
+navegador.</p>
 <h2>Eliminar datos</h2>
 <p>Todos los datos guardados se encuentran en el perfil del navegador. Se eliminan por
 completo al desinstalar la extensión. Los conjuntos concretos pueden borrarse en las
@@ -189,7 +206,7 @@ https://www.aepd.es</p>
 <p>Los cambios de esta declaración se publicarán en la misma dirección. Es determinante
 la fecha indicada arriba.</p></main>
 <footer><div class="bahn">
-  SpeechPilot · <a href="/es/bilder.html">Imágenes</a> · <a href="/es/nutzung.html">Condiciones</a> · <a href="/es/datenschutz.html">Privacidad</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+  © 2026 Benjamin Bertl · <a href="/es/bilder.html">Imágenes</a> · <a href="/es/nutzung.html">Condiciones</a> · <a href="/es/datenschutz.html">Privacidad</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
 </div></footer>
 </body>
 </html>
