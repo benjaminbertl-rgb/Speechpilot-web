@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SpeechPilot — Dictate instead of type</title>
-<meta name="description" content="Chrome extension for dictation: spoken text goes into the input field your cursor is in. Speech recognition runs on your device.">
+<meta name="description" content="Chrome extension for dictation: spoken text goes into the input field your cursor is in. The page you are on sees neither audio nor text.">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="128x128" href="/icon-128.png">
 <link rel="apple-touch-icon" href="/icon-128.png">
@@ -31,16 +31,13 @@ no sign-in, no cloud.</p>
 
 <div class="luecke"></div>
 
-<h2>Speech recognition runs on your device</h2>
-<p>Chrome has been able to recognise speech locally since version 138. Once the language
-pack is installed, <strong>neither the recording nor the recognised text</strong> leaves
-your computer. The settings show whether that is currently the case — you don't have to
-take our word for it, you can check.</p>
-<p>Without a language pack, Google handles recognition, as with any other dictation
-extension. SpeechPilot tells you which route is active.</p>
-<p>Either way, recognition runs in the extension's own area, not in the page you happen
-to be on: that page sees neither your audio nor the recognised text — only what you write
-into its input field.</p>
+<h2>The page can't listen in</h2>
+<p>Recognition runs in the extension's own, shielded area, not in the page you happen
+to be on: that page sees neither your audio nor the recognised text — only what you
+write into its input field.</p>
+<p>Recognition itself is handled by Chrome's built-in Google speech recognition, as in
+most dictation extensions. SpeechPilot stores neither the recording nor the recognised
+text.</p>
 
 <h2>Built for everyday writing</h2>
 <p>Anyone who writes messages all day knows the problem: they are rarely long texts,

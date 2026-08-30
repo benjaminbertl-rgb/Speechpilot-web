@@ -27,7 +27,7 @@ para su comprensión. La versión alemana está en
 <h2>Responsable del tratamiento</h2>
 <p><strong>Benjamin Alexander Bertl</strong>
 <strong>Calle Padre Esteban 29, bj izq</strong>
-<strong>38611 San Isidro, Santa Cruz de Tenerife, España</strong>
+<strong>38611 Granadilla de Abona, Santa Cruz de Tenerife, España</strong>
 <strong>NIE X5979615Y</strong>
 Preguntas y solicitudes de información: <strong>contact@speechpilot.vip</strong></p>
 <p>Responsable del tratamiento en el sentido del Reglamento General de Protección de
@@ -36,11 +36,11 @@ Datos (RGPD) y de la LOPDGDD española.</p>
 <p>SpeechPilot dicta lo hablado en el campo de entrada donde está el cursor. Los textos
 dictados, las macros y las listas no se transmiten al editor. No hay publicidad, ni
 seguimiento, ni cesión ni venta de datos.</p>
-<p>Si el paquete de idioma local está instalado, el reconocimiento de voz también se
-realiza en el dispositivo: entonces ni el audio ni el texto salen del ordenador. Sin el
-paquete, el reconocimiento lo realiza Google. Además, salen del dispositivo: la
-sincronización de los ajustes por parte del navegador y, solo al comprar funciones de
-pago, la tramitación del pago. Las tres cosas se describen más abajo.</p>
+<p>El reconocimiento de voz lo realiza el reconocimiento de Google integrado en
+Chrome; para ello, la grabación se transmite a servidores de Google. Además, salen del
+dispositivo: la sincronización de los ajustes por parte del navegador y, solo al
+comprar funciones de pago, la tramitación del pago. Las tres cosas se describen más
+abajo.</p>
 <h2>Bases jurídicas</h2>
 <p>El tratamiento de la entrada de voz y de las listas que usted crea se realiza para el
 cumplimiento de la relación de uso y a instancia suya (art. 6.1.b) RGPD). La tramitación
@@ -50,34 +50,24 @@ que existan obligaciones de conservación, para el cumplimiento de obligaciones 
 <h2>Qué datos se tratan</h2>
 <h3>1. Entrada de voz</h3>
 <p>Cuando se activa el micrófono, SpeechPilot graba a través del reconocimiento de voz
-integrado en el navegador. Dónde tiene lugar ese reconocimiento depende de si hay un
-paquete de idioma local instalado:</p>
-<p><strong>Con el paquete de idioma instalado (opción predeterminada, siempre que esté
-disponible).</strong> Chrome reconoce la voz en el dispositivo. <strong>Ni la grabación
-ni el texto reconocido salen del ordenador.</strong> Si esta vía está activa se indica en
-las opciones, en «Reconocimiento en el dispositivo»; allí se descarga el paquete de
-idioma pulsando un botón (una sola vez, unos 60 MB por idioma). También se puede
-desactivar allí.</p>
-<p><strong>Sin paquete de idioma.</strong> Chrome transmite la grabación a servidores de
-Google para su reconocimiento y devuelve el texto terminado. Esto forma parte del
-navegador, no de la extensión. Se graba todo lo que llega al micrófono mientras se
-dicta. Se aplica la política de privacidad de Google:
-https://policies.google.com/privacy</p>
-<p>Si el reconocimiento en el dispositivo no da resultados, SpeechPilot cambia a la
-segunda vía durante la sesión en curso y lo advierte con un aviso.</p>
-<p>En ambos casos, SpeechPilot no almacena ni la grabación ni el texto reconocido. El
-texto se escribe en el campo de entrada y después no se conserva. El micrófono funciona
-solo mientras está activado.</p>
-<p><strong>Dónde se graba.</strong> El reconocimiento se ejecuta en un documento propio e
-invisible de la extensión, no en el contexto de la página visitada. La página no ve ni
-el audio ni el texto reconocido; solo recibe lo que se escribe en su campo de entrada.
-El documento existe únicamente mientras se dicta y se cierra al apagar el micrófono.</p>
+integrado en el navegador. Chrome transmite la grabación a servidores de Google para su
+reconocimiento y devuelve el texto terminado. Esto forma parte del navegador, no de la
+extensión. Se graba todo lo que llega al micrófono mientras se dicta. Se aplica la
+política de privacidad de Google: https://policies.google.com/privacy</p>
+<p>SpeechPilot no almacena ni la grabación ni el texto reconocido. El texto se escribe
+en el campo de entrada y después no se conserva. El micrófono funciona solo mientras
+está activado.</p>
+<p><strong>Dónde se graba.</strong> El reconocimiento se ejecuta en un marco propio e
+invisible de la extensión dentro de la página abierta, separado del código de la
+página. La página no ve ni el audio ni el texto reconocido; solo recibe lo que se
+escribe en su campo de entrada. El marco existe únicamente mientras se dicta y se
+elimina al apagar el micrófono.</p>
 <p><strong>Permiso del micrófono.</strong> El permiso se concede una sola vez a la propia
 extensión (origen <code>chrome-extension://…</code>) y no a cada página visitada por
-separado. Se pregunta la primera vez que se activa el micrófono; para ello SpeechPilot
-inserta brevemente una página propia e invisible en la página abierta, cuya única
-función es formular esa pregunta. El permiso puede retirarse en cualquier momento en
-los ajustes de Chrome, en «Configuración de sitios → Micrófono».</p>
+separado. Se pregunta la primera vez que se activa el micrófono; la pregunta la formula
+el mismo marco invisible que ejecuta el reconocimiento. El permiso puede retirarse en
+cualquier momento en los ajustes de Chrome, en «Configuración de sitios →
+Micrófono».</p>
 <h3>2. Ajustes y listas propias</h3>
 <p>En el dispositivo se guardan: el idioma de reconocimiento y los interruptores, la
 lista de sustituciones, las palabras de emoji, las macros (atajos y sus textos
@@ -126,10 +116,6 @@ más allá de la sesión en curso, esto no ocurre.</p>
 <tr>
 <td><code>storage</code></td>
 <td>guardar ajustes, listas y macros; además, el estado del pago</td>
-</tr>
-<tr>
-<td><code>offscreen</code></td>
-<td>ejecutar el reconocimiento de voz fuera de la página visitada</td>
 </tr>
 </tbody>
 </table>
@@ -185,9 +171,9 @@ por su nombre a MailChimp para el envío de correo. Según la cláusula 5.1 del 
 encargo de tratamiento, recurrir a un subencargado requiere la autorización del
 responsable.</p>
 <h2>Destinatarios</h2>
-<p>Google (sincronización de la cuenta, y el reconocimiento de voz solo sin paquete de
-idioma instalado — ambas cosas forman parte del navegador) y —solo en caso de adquirir
-funciones de pago— Lemon Squeezy como vendedor. Ningún otro más.</p>
+<p>Google (sincronización de la cuenta y reconocimiento de voz — ambas cosas forman
+parte del navegador) y —solo en caso de adquirir funciones de pago— Lemon Squeezy como
+vendedor. Ningún otro más.</p>
 <h2>Limited Use</h2>
 <p>El uso de los datos por parte de SpeechPilot cumple los requisitos de la Chrome Web
 Store Limited Use Policy.</p>

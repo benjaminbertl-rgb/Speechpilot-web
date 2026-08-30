@@ -24,7 +24,7 @@
 <h2>Verantwortlicher</h2>
 <p><strong>Benjamin Alexander Bertl</strong>
 <strong>Calle Padre Esteban 29, bj izq</strong>
-<strong>38611 San Isidro, Santa Cruz de Tenerife, Spanien</strong>
+<strong>38611 Granadilla de Abona, Santa Cruz de Tenerife, Spanien</strong>
 <strong>NIE X5979615Y</strong>
 Fragen und Auskunftsersuchen: <strong>contact@speechpilot.vip</strong></p>
 <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und der
@@ -34,12 +34,11 @@ spanischen LOPDGDD.</p>
 steht. Diktierte Texte, Makros und Listen werden nicht an den Herausgeber
 übertragen. Es gibt keine Werbung, kein Tracking, keine Weitergabe und
 keinen Verkauf von Daten.</p>
-<p>Ist das lokale Sprachpaket geladen, findet auch die Spracherkennung auf
-dem Gerät statt — dann verlässt weder Ton noch Text den Rechner. Ohne
-Paket übernimmt die Erkennung von Google. Daneben verlassen das Gerät:
-die Browser-Synchronisierung der Einstellungen und, nur beim Kauf
-kostenpflichtiger Funktionen, die Zahlungsabwicklung. Alles drei ist
-unten beschrieben.</p>
+<p>Die Spracherkennung übernimmt die in Chrome eingebaute Erkennung von
+Google; die Aufnahme wird dafür an Server von Google übertragen. Daneben
+verlassen das Gerät: die Browser-Synchronisierung der Einstellungen und,
+nur beim Kauf kostenpflichtiger Funktionen, die Zahlungsabwicklung. Alles
+drei ist unten beschrieben.</p>
 <h2>Rechtsgrundlagen</h2>
 <p>Die Verarbeitung der Spracheingabe und der von Ihnen angelegten Listen
 erfolgt zur Erfüllung des Nutzungsverhältnisses und auf Ihre Veranlassung
@@ -50,37 +49,26 @@ Aufbewahrungspflichten bestehen, zur Erfüllung rechtlicher Pflichten
 <h2>Welche Daten verarbeitet werden</h2>
 <h3>1. Spracheingabe</h3>
 <p>Wird das Mikrofon eingeschaltet, nimmt SpeechPilot über die im Browser
-eingebaute Spracherkennung auf. Wo diese Erkennung stattfindet, hängt
-davon ab, ob ein lokales Sprachpaket geladen ist:</p>
-<p><strong>Mit geladenem Sprachpaket (Standard, sofern verfügbar).</strong> Chrome erkennt
-die Sprache auf dem Gerät. <strong>Weder die Aufnahme noch der erkannte Text
-verlassen den Rechner.</strong> Ob dieser Weg aktiv ist, steht in den Optionen
-unter „Erkennung auf dem Gerät"; das Sprachpaket wird dort auf Knopfdruck
-geladen (einmalig, etwa 60 MB je Sprache). Er lässt sich dort auch
-abschalten.</p>
-<p><strong>Ohne Sprachpaket.</strong> Chrome übermittelt die Aufnahme zur Erkennung an
-Server von Google und liefert den fertigen Text zurück. Das ist
-Bestandteil des Browsers, nicht der Erweiterung. Aufgenommen wird alles,
-was während des Diktierens am Mikrofon anliegt. Es gilt die
+eingebaute Spracherkennung auf. Chrome übermittelt die Aufnahme zur
+Erkennung an Server von Google und liefert den fertigen Text zurück. Das
+ist Bestandteil des Browsers, nicht der Erweiterung. Aufgenommen wird
+alles, was während des Diktierens am Mikrofon anliegt. Es gilt die
 Datenschutzerklärung von Google: https://policies.google.com/privacy</p>
-<p>Liefert die Erkennung auf dem Gerät keine Ergebnisse, wechselt
-SpeechPilot für die laufende Sitzung auf den zweiten Weg und weist mit
-einer Meldung darauf hin.</p>
-<p>In beiden Fällen speichert SpeechPilot weder die Aufnahme noch den
-erkannten Text. Der Text wird in das Eingabefeld geschrieben und danach
-nicht aufbewahrt. Das Mikrofon läuft nur, solange es eingeschaltet ist.</p>
+<p>SpeechPilot speichert weder die Aufnahme noch den erkannten Text. Der
+Text wird in das Eingabefeld geschrieben und danach nicht aufbewahrt. Das
+Mikrofon läuft nur, solange es eingeschaltet ist.</p>
 <p><strong>Wo aufgenommen wird.</strong> Die Erkennung läuft in einem eigenen, unsichtbaren
-Dokument der Erweiterung, nicht im Kontext der besuchten Seite. Die Seite
-bekommt weder den Ton noch den erkannten Text zu sehen; bei ihr kommt nur
-an, was in ihr Eingabefeld geschrieben wird. Das Dokument besteht nur,
-solange diktiert wird, und wird beim Ausschalten geschlossen.</p>
+Rahmen der Erweiterung innerhalb der geöffneten Seite, getrennt vom Code
+der Seite. Die Seite bekommt weder den Ton noch den erkannten Text zu
+sehen; bei ihr kommt nur an, was in ihr Eingabefeld geschrieben wird. Der
+Rahmen besteht nur, solange diktiert wird, und wird beim Ausschalten
+entfernt.</p>
 <p><strong>Freigabe des Mikrofons.</strong> Die Freigabe wird einmalig für die Erweiterung
 selbst erteilt (Ursprung <code>chrome-extension://…</code>) und nicht für jede besuchte
-Seite einzeln. Gefragt wird beim ersten Einschalten; dafür blendet
-SpeechPilot kurz eine eigene, unsichtbare Seite in die geöffnete Seite ein,
-die nichts anderes tut, als diese Frage zu stellen. Entziehen lässt sich die
-Freigabe jederzeit in den Chrome-Einstellungen unter „Website-Einstellungen
-→ Mikrofon".</p>
+Seite einzeln. Gefragt wird beim ersten Einschalten; die Frage stellt
+derselbe unsichtbare Rahmen, der auch die Erkennung ausführt. Entziehen
+lässt sich die Freigabe jederzeit in den Chrome-Einstellungen unter
+„Website-Einstellungen → Mikrofon".</p>
 <h3>2. Einstellungen und eigene Listen</h3>
 <p>Auf dem Gerät gespeichert werden: Erkennungssprache und Schalter,
 Ersetzungsliste, Emoji-Wörter, Makros (Kürzel und die dazugehörigen
@@ -130,10 +118,6 @@ nicht.</p>
 <tr>
 <td><code>storage</code></td>
 <td>Einstellungen, Listen und Makros speichern; außerdem der Zahlungsstatus</td>
-</tr>
-<tr>
-<td><code>offscreen</code></td>
-<td>die Spracherkennung außerhalb der besuchten Seite ausführen</td>
 </tr>
 </tbody>
 </table>
@@ -195,8 +179,8 @@ namentlich genannt ist MailChimp für den E-Mail-Versand. Der Einsatz von
 Unterauftragnehmern ist nach Ziff. 5.1 des Auftragsverarbeitungsvertrags an
 die Zustimmung des Verantwortlichen gebunden.</p>
 <h2>Empfänger</h2>
-<p>Google (Kontosynchronisierung, und die Spracherkennung nur ohne geladenes
-Sprachpaket — beides Bestandteil des Browsers) sowie — nur bei Erwerb kostenpflichtiger Funktionen —
+<p>Google (Kontosynchronisierung und Spracherkennung — beides Bestandteil
+des Browsers) sowie — nur bei Erwerb kostenpflichtiger Funktionen —
 Lemon Squeezy als Verkäufer. Darüber hinaus keine.</p>
 <h2>Limited Use</h2>
 <p>Die Verwendung der Daten durch SpeechPilot erfüllt die Anforderungen der
