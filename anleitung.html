@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anleitung — SpeechPilot</title>
+<meta name="description" content="Vollständige Anleitung zu SpeechPilot: Diktieren, Ersetzungen, Emojis, Makros, Leiste und Lizenz.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/icon-128.png">
+<link rel="apple-touch-icon" href="/icon-128.png">
+<link rel="alternate" hreflang="de" href="https://speechpilot.vip/anleitung.html">
+<link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/anleitung.html">
+<link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/anleitung.html">
+<link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/anleitung.html">
+<link rel="stylesheet" href="/stil.css">
+<link rel="stylesheet" href="/anleitung.css">
+</head>
+<body>
+<header><div class="bahn">
+  <a class="marke" href="/"><img src="/favicon-32.png" alt="" width="22" height="22">SpeechPilot</a>
+  <nav><a href="/">Start</a><a href="/anleitung.html">Anleitung</a><a href="/bilder.html">Bilder</a><a href="/nutzung.html">Nutzung</a><a href="/datenschutz.html">Datenschutz</a><span class="sprachen" aria-label="Sprache"><a class="aktiv" href="/anleitung.html" hreflang="de">DE</a><a href="/en/anleitung.html" hreflang="en">EN</a><a href="/es/anleitung.html" hreflang="es">ES</a></span></nav>
+</div></header>
+<main class="bahn">
+
+
+<h1>SpeechPilot — Anleitung</h1>
+<p class="vorspann">Diktieren statt Tippen: Der gesprochene Text landet in dem
+Eingabefeld, in dem der Cursor steht. Diese Anleitung beschreibt alles, was die
+Erweiterung kann — vom ersten Klick bis zu Makros, Leiste und Lizenz.</p>
+
+<ol class="inhalt">
+  <li><a href="#start">Erster Start</a></li>
+  <li><a href="#diktieren">Diktieren</a></li>
+  <li><a href="#satzzeichen">Satzzeichen sprechen</a></li>
+  <li><a href="#einstellungen">Einstellungen</a></li>
+  <li><a href="#ersetzungen">Ersetzungen</a></li>
+  <li><a href="#emojis">Emojis</a></li>
+  <li><a href="#makros">Makros</a></li>
+  <li><a href="#leiste">Leiste</a></li>
+  <li><a href="#sicherung">Sicherung</a></li>
+  <li><a href="#lizenz">Lizenz</a></li>
+  <li><a href="#datenschutz">Datenschutz</a></li>
+  <li><a href="#probleme">Wenn etwas klemmt</a></li>
+  <li><a href="#uebersicht">Tasten und Klicks</a></li>
+</ol>
+
+<h2 id="start">1. Erster Start</h2>
+
+<h3>Einschalten</h3>
+<p>Öffne die Website, auf der du schreiben willst, und klicke auf das
+SpeechPilot-Symbol in der Chrome-Leiste. Unten rechts auf der Seite erscheint der
+Mikrofon-Knopf. Ein zweiter Klick auf das Symbol blendet ihn wieder aus.</p>
+<p>SpeechPilot ist immer nur auf dem Tab aktiv, auf dem du es eingeschaltet hast.
+Ein neuer Tab braucht einen neuen Klick.</p>
+
+<h3>Mikrofon freigeben</h3>
+<p>Beim ersten Einschalten fragt Chrome nach dem Mikrofon. Die Frage steht oben in
+der Adressleiste — mit <b>Zulassen</b> antworten. Ohne Freigabe kann nicht diktiert
+werden. Die Freigabe gilt danach dauerhaft und wird nur von SpeechPilot selbst
+angefordert, nicht von der Website.</p>
+<p>Hast du versehentlich <b>Blockieren</b> geklickt: auf das Schloss- oder
+Schieberegler-Symbol links in der Adressleiste klicken und das Mikrofon dort wieder
+erlauben.</p>
+
+<h3>Symbol anheften</h3>
+<p>Falls das Symbol nicht sichtbar ist: In Chrome rechts oben auf das Puzzleteil
+klicken und SpeechPilot mit der Stecknadel anheften.</p>
+
+<h3>Einstellungen öffnen</h3>
+<p>Rechtsklick auf das SpeechPilot-Symbol → <b>Optionen</b>. Dort liegen alle
+Reiter: Einstellungen, Makros, Emojis, Ersetzungen, Leiste, Lizenz und diese
+Hilfe.</p>
+
+<h2 id="diktieren">2. Diktieren</h2>
+
+<h3>Der Ablauf</h3>
+<ol>
+  <li>In das Feld klicken, in das geschrieben werden soll — der Cursor muss darin
+      blinken.</li>
+  <li>Auf den Mikrofon-Knopf klicken oder <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>
+      drücken.</li>
+  <li>Sprechen. Der Text erscheint laufend im Feld.</li>
+  <li>Erneut klicken oder das Tastenkürzel drücken, um das Mikrofon abzuschalten.</li>
+</ol>
+<p>Der Text geht immer in das Feld, in dem der Cursor steht. Klickst du zwischendurch
+in ein anderes Feld, schreibt SpeechPilot dort weiter.</p>
+
+<h3>Enter</h3>
+<p>Solange noch Text in Arbeit ist, hält SpeechPilot die Enter-Taste zurück, damit
+keine halbe Nachricht rausgeht. Daraus folgt die Faustregel: <b>Das erste Enter
+schreibt den Satz fest, das zweite sendet ihn.</b> Ist gerade nichts in Arbeit, wirkt
+Enter sofort wie gewohnt.</p>
+
+<h3>Groß- und Kleinschreibung</h3>
+<p>Am Satzanfang und nach <b>.</b> <b>!</b> <b>?</b> sowie nach einem Zeilenumbruch
+wird groß weitergeschrieben. Das erledigt SpeechPilot selbst, unabhängig von der
+Lizenz.</p>
+
+<h3>Passwortfelder</h3>
+<p>In Passwort- und Zahlungsfelder wird grundsätzlich nicht diktiert. Der Versuch
+wird mit einem kurzen Hinweis abgelehnt.</p>
+
+<h3>Wo es funktioniert</h3>
+<p>In gewöhnlichen Eingabefeldern, Textfeldern und den meisten Chat-Editoren.
+Nicht möglich ist es auf Chrome-eigenen Seiten (<em>chrome://…</em>, Web Store) und
+in PDF-Ansichten — dort lässt Chrome keine Erweiterung ins Feld schreiben.</p>
+
+<h2 id="satzzeichen">3. Satzzeichen sprechen</h2>
+<p>Diese Wörter werden beim Diktieren in Zeichen verwandelt. Sie sind fest eingebaut
+und arbeiten in jeder Lizenzstufe — auch in der kostenlosen Fassung.</p>
+
+<table>
+<tr><th>Gesprochen</th><th>Geschrieben</th></tr>
+<tr><td>Punkt</td><td>.</td></tr>
+<tr><td>Komma</td><td>,</td></tr>
+<tr><td>Fragezeichen</td><td>?</td></tr>
+<tr><td>Ausrufezeichen</td><td>!</td></tr>
+<tr><td>Doppelpunkt</td><td>:</td></tr>
+<tr><td>Semikolon / Strichpunkt</td><td>;</td></tr>
+<tr><td>Bindestrich</td><td>-</td></tr>
+<tr><td>Gedankenstrich</td><td>–</td></tr>
+<tr><td>Klammer auf / Klammer zu</td><td>( )</td></tr>
+<tr><td>Anführungszeichen / Anführungszeichen zu</td><td>„ “</td></tr>
+<tr><td>neue Zeile</td><td>Zeilenumbruch</td></tr>
+<tr><td>neuer Absatz / Absatz</td><td>Leerzeile</td></tr>
+</table>
+
+<p>Die Leerzeichen setzt SpeechPilot passend: Vor <b>. , ! ? : ; )</b> kommt keins,
+nach <b>(</b> und einem Zeilenumbruch ebenfalls nicht.</p>
+<p><b>Diese Befehle sind deutsche Wörter.</b> Diktierst du in einer anderen Sprache,
+legst du dir die passenden Wörter im Reiter <b>Ersetzungen</b> selbst an — etwa
+<em>period</em> → <b>.</b> Das gehört zur Stufe Standard.</p>
+
+<h2 id="einstellungen">4. Einstellungen</h2>
+<p>Alle Schalter im ersten Reiter wirken sofort, ohne Speichern.</p>
+
+<table>
+<tr><th>Einstellung</th><th>Was sie tut</th></tr>
+<tr><td>Sprache der Oberfläche</td>
+    <td>Beschriftung der Einstellungsseite und der Knöpfe auf der Website: Deutsch,
+        Englisch, Spanisch oder „wie der Browser“. Wirkt sofort und hat mit der
+        Erkennung nichts zu tun.</td></tr>
+<tr><td>Sprache der Erkennung</td>
+    <td>In welcher Sprache du sprichst. Zur Wahl stehen Deutsch (Deutschland,
+        Österreich, Schweiz), Englisch (USA, UK), Französisch, Spanisch,
+        Italienisch, Niederländisch, Polnisch, Portugiesisch und Türkisch. Der
+        Wechsel greift beim nächsten Einschalten des Mikrofons, nicht mitten im
+        Satz.</td></tr>
+<tr><td>ß durch ss ersetzen</td>
+    <td>Schweizer Schreibweise. Gilt auch für Makros und die Texte der Leiste.</td></tr>
+<tr><td>Nach einem Smiley groß weiterschreiben</td>
+    <td>Ein Smiley steht meist am Satzende. Abschalten, wenn du Smileys oft mitten im
+        Satz benutzt.</td></tr>
+<tr><td>Mikrofon-Knopf auf der Seite anzeigen</td>
+    <td>Ausgeblendet läuft alles über das Symbol in der Chrome-Leiste oder das
+        Tastenkürzel.</td></tr>
+<tr><td>Makroleiste auf der Seite anzeigen</td>
+    <td>Zeigt je Buchstabengruppe das zuletzt benutzte Makro. Die Leiste lässt sich
+        verschieben.</td></tr>
+<tr><td>Tastenkürzel</td>
+    <td>Vorgabe ist <kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>. Chrome vergibt
+        Kürzel selbst, deshalb führt „ändern“ auf die Chrome-Seite
+        <em>chrome://extensions/shortcuts</em>.</td></tr>
+<tr><td>Sicherung</td>
+    <td>Exportiert und importiert alles auf einmal — siehe
+        <a href="#sicherung">Sicherung</a>.</td></tr>
+</table>
+
+<h2 id="ersetzungen">5. Ersetzungen <span class="stufe">Standard</span></h2>
+<p>Was du links sagst, wird rechts geschrieben. Gedacht für Fachbegriffe, Eigennamen
+und alles, was die Erkennung regelmäßig falsch schreibt.</p>
+
+<h3>Anlegen</h3>
+<ol>
+  <li>Reiter <b>Ersetzungen</b> öffnen, auf <b>Zeile hinzufügen</b> klicken.</li>
+  <li>Links das gesprochene Wort, rechts den Text, der erscheinen soll.</li>
+  <li><b>Speichern</b> — Änderungen gelten erst danach.</li>
+</ol>
+
+<h3>Was du wissen solltest</h3>
+<ul>
+  <li><b>Nur ganze Wörter.</b> „Haus“ ersetzt nicht die ersten vier Buchstaben von
+      „Hausboot“.</li>
+  <li><b>Umlaute sind egal.</b> „für“ und „fuer“ treffen denselben Eintrag,
+      Groß- und Kleinschreibung ebenso.</li>
+  <li>Auch mehrere Wörter sind erlaubt: „mit freundlichen Grüßen“ → eine ganze
+      Grußformel.</li>
+  <li>Die eingebauten Satzzeichen stehen unten in der Liste. Die musst du nicht
+      selbst anlegen — und du kannst sie mit einem eigenen Eintrag überschreiben.</li>
+</ul>
+
+<h2 id="emojis">6. Emojis <span class="stufe">Standard</span></h2>
+<p>Ein gesprochenes Wort wird zu einem Zeichen — praktisch für alles, was sich nicht
+diktieren lässt.</p>
+<ol>
+  <li>Reiter <b>Emojis</b> → <b>Zeile hinzufügen</b>.</li>
+  <li>Links das Wort, etwa <em>daumen</em>. Rechts das Zeichen: eintippen, mit
+      <kbd>Windows</kbd>+<kbd>.</kbd> die Emoji-Tastatur von Windows öffnen, oder
+      über <b>▾</b> aus der kleinen Auswahl wählen.</li>
+  <li><b>Speichern</b>.</li>
+</ol>
+<p>Nimm Wörter, die du sonst nicht diktierst — sonst steht mitten im Satz ein Smiley.
+Umlaute und Groß-/Kleinschreibung spielen wie bei den Ersetzungen keine Rolle.</p>
+<p>Ob nach einem Smiley groß weitergeschrieben wird, stellst du im ersten Reiter
+ein.</p>
+
+<h2 id="makros">7. Makros <span class="stufe">Complete</span></h2>
+<p>Makros sind gespeicherte Texte, die auf ein kurzes Kürzel hören: Kürzel sagen,
+ganzer Text erscheint.</p>
+
+<h3>Kürzel</h3>
+<p>Ein Kürzel ist ein Buchstabe mit Zahl, etwa <b>A1</b>. Erkannt wird auch
+„A eins“ oder „A 1“ — die Spracherkennung schreibt Zahlen je nach Laune
+unterschiedlich, deshalb prüft SpeechPilot alle Formen. Zahlwörter bis zwölf werden
+in Ziffern übersetzt.</p>
+<p>Die Einstellungsseite warnt, wenn zwei Kürzel gesprochen gleich klingen — sonst
+verdeckt eines das andere.</p>
+
+<h3>Anlegen</h3>
+<ul>
+  <li><b>In den Einstellungen:</b> Reiter <b>Makros</b> → <b>+ Neues Makro</b>,
+      Kürzel und Text eintragen, <b>Speichern</b>.</li>
+  <li><b>Unterwegs:</b> Text auf der Website markieren und auf das <b>+</b> am
+      Mikrofon-Knopf klicken. Das Kürzel vergibt SpeechPilot der Reihe nach.</li>
+</ul>
+
+<h3>Sperren</h3>
+<p>Damit derselbe Text nicht zweimal rausgeht, wenn man sich verspricht, lässt sich
+ein benutztes Makro sperren: <em>aus</em>, 1, 5 oder 15 Minuten, 1 oder 8 Stunden,
+oder <em>bis zum Rücksetzen</em>. Die Zeitstufen geben das Makro von selbst wieder
+frei; bei „bis zum Rücksetzen“ bleibt es zu, bis du es über <b>Sperren aufheben</b>
+freigibst — wahlweise eine Buchstabengruppe oder alle. Die Zählung, wie oft ein Makro
+benutzt wurde, bleibt dabei erhalten.</p>
+
+<h3>Die Liste im Griff behalten</h3>
+<ul>
+  <li><b>Suchen</b> und <b>Anfangsbuchstabe</b> filtern die Anzeige, lange Listen
+      werden auf Seiten verteilt.</li>
+  <li><b>Doppelte finden</b> zeigt Makros mit gleichem Text.</li>
+  <li><b>Angezeigte löschen</b> entfernt genau das, was gerade gefiltert zu sehen ist
+      — das lässt sich nicht rückgängig machen.</li>
+</ul>
+
+<h3>Sichern und einspielen</h3>
+<p><b>Makros sichern</b> und <b>Makros einspielen</b> arbeiten nur mit den Makros,
+getrennt von der allgemeinen Sicherung. Beim Einspielen fragt SpeechPilot, was
+passieren soll:</p>
+<table>
+<tr><th>Alles ersetzen</th><td>Der vorhandene Bestand wird verworfen.</td></tr>
+<tr><th>Hinzufügen</th><td>Die Datei kommt zum Bestand dazu.</td></tr>
+<tr><th>Hinzufügen ohne Textdubletten</th>
+    <td>Wie oben, aber Makros mit einem Text, den es schon gibt, bleiben außen
+        vor.</td></tr>
+</table>
+<p>Makros liegen aus Platzgründen nur auf diesem Rechner und wandern nicht über die
+Chrome-Synchronisierung mit. Auf ein zweites Gerät kommen sie über Sichern und
+Einspielen.</p>
+
+<h3>Makroleiste</h3>
+<p>Ist sie im ersten Reiter eingeschaltet, zeigt sie je Buchstabengruppe das zuletzt
+benutzte Makro und lässt sich mit der Maus verschieben. <kbd>Shift</kbd>+Klick
+entfernt eine Gruppe aus der Anzeige.</p>
+
+<div class="kachel">
+<p><b>Bitte beachten:</b> Manche Plattformen machen Vorgaben dazu, ob und wie
+vorformulierte Texte verwendet werden dürfen. Prüfe die Regeln der Seite, auf der du
+arbeitest, und richte dich danach — die Verantwortung dafür liegt bei dir.</p>
+</div>
+
+<h2 id="leiste">8. Leiste <span class="stufe">Complete</span></h2>
+<p>Die Leiste ist die Knopfleiste am rechten Seitenrand. Das <b>☰</b> am
+Mikrofon-Knopf blendet sie ein und aus. Sie enthält Textknöpfe und drei
+Auswahllisten.</p>
+
+<h3>Textknöpfe</h3>
+<ul>
+  <li><b>Text hinterlegen:</b> Rechtsklick auf den Knopf. Ein noch leerer Knopf
+      öffnet die Eingabe auch mit gewöhnlichem Klick.</li>
+  <li><b>Benutzen:</b> Klick — der Text geht in das verknüpfte Feld, sonst in das
+      Feld, in dem der Cursor steht.</li>
+</ul>
+
+<h3>Felder verknüpfen</h3>
+<p>Damit ein Knopf immer ins selbe Feld schreibt:</p>
+<ol>
+  <li><kbd>Shift</kbd>+Klick auf den Knopf oder die Liste.</li>
+  <li>Das Feld auf der Seite anklicken. <kbd>Esc</kbd> bricht ab.</li>
+</ol>
+<p><kbd>Alt</kbd>+Klick löst die Verknüpfung wieder.</p>
+<p>Gemerkt wird die <b>Position</b> des Feldes, nicht sein Name — Namen ändern die
+Websites ständig. Blendet die Seite ein Feld ein oder aus, verschieben sich die
+Positionen, und die Verknüpfung muss neu gesetzt werden. Genau das steckt hinter der
+Meldung „Feld Nr. 3 gibt es auf dieser Seite nicht“.</p>
+
+<h3>Die drei Listen</h3>
+<p>Berufe, Hobbys und Namen pflegst du in den Einstellungen im Reiter <b>Leiste</b>:
+ein Eintrag pro Zeile. Beim Speichern werden Leerzeilen und Doppelte entfernt und
+alles alphabetisch sortiert. Die Listen gelten für <b>alle</b> Profile gemeinsam.</p>
+
+<h3>Profile</h3>
+<p>Profile legst du in der Leiste selbst an, nicht in den Einstellungen. Jedes Profil
+hat eigene Texte und eigene Feldverknüpfungen — für jede Website ein passender Satz.
+Umbenennen und Löschen gehen ebenfalls dort; beim Löschen verschwinden die Texte und
+Verknüpfungen dieses Profils.</p>
+
+<h3>Platz</h3>
+<p>Die Breite der Leiste lässt sich ziehen. Mit <b>Seite schmaler machen</b> rückt die
+Website zur Seite, statt dass die Leiste über ihr liegt.</p>
+
+<h2 id="sicherung">9. Sicherung</h2>
+<p>Im ersten Reiter sichert <b>exportieren</b> alles in eine Datei: Emojis,
+Ersetzungen, Makros, die Leiste samt Profilen und alle Einstellungen.</p>
+<p><b>importieren</b> ersetzt den gesamten Bestand — es wird vorher gefragt. Wer nur
+Makros übertragen will, nimmt den eigenen Weg im Reiter Makros; erkennt SpeechPilot
+beim Import eine reine Makro-Datei, weist es darauf hin, statt alles zu löschen.</p>
+<p>Lege vor größeren Änderungen eine Sicherung an. Sie ist auch der Weg auf einen
+zweiten Rechner.</p>
+
+<h2 id="lizenz">10. Lizenz</h2>
+<p>Diktieren, die eingebauten Satzzeichen und die Groß-/Kleinschreibung sind immer
+dabei — auch ohne Lizenz.</p>
+
+<table>
+<tr><th>Stufe</th><th>Enthält</th></tr>
+<tr><td>Kostenlose Fassung</td>
+    <td>Diktat, eingebaute Satzzeichen, Groß-/Kleinschreibung.</td></tr>
+<tr><td>Standard</td><td>Dazu eigene Ersetzungen und eigene Emoji-Wörter.</td></tr>
+<tr><td>Complete</td><td>Dazu Makros und die Leiste auf der Seite.</td></tr>
+</table>
+
+<h3>Freischalten</h3>
+<p>Den Schlüssel aus der E-Mail nach dem Kauf im Reiter <b>Lizenz</b> eintragen und
+auf <b>Freischalten</b> klicken. Der Schlüssel bleibt auf diesem Gerät und wird
+danach höchstens einmal am Tag nachgeprüft.</p>
+
+<h3>Ohne Netz</h3>
+<p>Ist der Lizenzserver nicht erreichbar, gilt die zuletzt bestätigte Stufe noch
+<b>14 Tage</b> weiter. Erst danach fällt sie auf die kostenlose Fassung zurück, bis
+die nächste Prüfung gelingt.</p>
+
+<h3>Gerätewechsel</h3>
+<p>Jeder Schlüssel hat eine begrenzte Zahl an Aktivierungen; der Stand steht im
+Reiter Lizenz. <b>Lizenz entfernen</b> gibt den Platz wieder frei — danach lässt sich
+derselbe Schlüssel auf einem anderen Rechner eintragen. War der Server dabei nicht
+erreichbar, wird der Platz bei der nächsten Gelegenheit frei.</p>
+
+<h3>Was mit gesperrten Inhalten passiert</h3>
+<p>Nichts geht verloren. Makros und Leistentexte bleiben gespeichert, werden ohne
+passende Stufe nur nicht eingesetzt. Nach dem Freischalten sind sie sofort wieder da
+— ohne die Seite neu zu laden.</p>
+
+<h2 id="datenschutz">11. Datenschutz</h2>
+<ul>
+  <li>Die Erkennung übernimmt Chrome mit der Spracherkennung von Google — so wie bei
+      den meisten Diktier-Erweiterungen.</li>
+  <li>Sie läuft in einem abgeschirmten Bereich der Erweiterung, nicht in der Website:
+      Die Seite bekommt weder deinen Ton noch den erkannten Text zu sehen — nur das,
+      was in ihr Eingabefeld geschrieben wird.</li>
+  <li>SpeechPilot speichert weder Aufnahme noch erkannten Text.</li>
+  <li>Einstellungen, Ersetzungen und Emojis liegen in der Chrome-Synchronisierung,
+      Makros nur lokal auf diesem Gerät.</li>
+  <li>Kein Konto, keine Anmeldung. Nach außen geht nur die Lizenzprüfung, höchstens
+      einmal am Tag.</li>
+</ul>
+<p>Die vollständige Erklärung steht auf
+<a href="https://speechpilot.vip/datenschutz.html">speechpilot.vip/datenschutz.html</a>.</p>
+
+<h2 id="probleme">12. Wenn etwas klemmt</h2>
+
+<table>
+<tr><th>Beobachtung</th><th>Ursache und Abhilfe</th></tr>
+<tr><td>Kein Mikrofon-Knopf</td>
+    <td>SpeechPilot ist auf diesem Tab nicht eingeschaltet (Symbol anklicken), oder
+        der Knopf ist in den Einstellungen ausgeblendet. Auf
+        <em>chrome://</em>-Seiten und im Web Store lässt Chrome keine Erweiterung
+        zu.</td></tr>
+<tr><td>Es tut sich nichts beim Sprechen</td>
+    <td>Mikrofon nicht freigegeben — die Frage steht oben in der Adressleiste. Sonst
+        über das Symbol links in der Adressleiste erlauben.</td></tr>
+<tr><td>Text landet im falschen Feld</td>
+    <td>Der Cursor stand woanders. Ins gewünschte Feld klicken; für feste Ziele die
+        Knöpfe der Leiste verknüpfen.</td></tr>
+<tr><td>„In Passwort- und Zahlungsfelder wird nicht diktiert“</td>
+    <td>So gewollt.</td></tr>
+<tr><td>„Der Text konnte hier nicht eingefügt werden“</td>
+    <td>Das Feld nimmt keinen fremden Text an — meist ein besonderer Editor. Dort
+        hilft nur Tippen.</td></tr>
+<tr><td>Enter sendet nicht</td>
+    <td>Es war noch Text in Arbeit; dieses Enter hat ihn festgeschrieben. Das nächste
+        sendet.</td></tr>
+<tr><td>Ein Makro kommt nicht</td>
+    <td>Es ist gesperrt („wurde schon benutzt“) — <b>Sperren aufheben</b> im Reiter
+        Makros. Oder die Erkennung hat das Kürzel anders geschrieben: Text im Feld
+        ansehen und gegebenenfalls ein zweites Kürzel anlegen.</td></tr>
+<tr><td>Ein Knopf der Leiste trifft daneben</td>
+    <td>Die Seite hat ein Feld ein- oder ausgeblendet, dadurch stimmt die Position
+        nicht mehr. Verknüpfung mit <kbd>Shift</kbd>+Klick neu setzen.</td></tr>
+<tr><td>Zwei Mikrofon-Knöpfe</td>
+    <td>Kann nach einem Update bei offenem Tab auftreten. Seite neu laden.</td></tr>
+<tr><td>Änderungen an Ersetzungen oder Emojis wirken nicht</td>
+    <td><b>Speichern</b> nicht vergessen — anders als die Schalter im ersten Reiter
+        gelten die Listen erst danach.</td></tr>
+<tr><td>„Nicht gespeichert: die Liste ist zu lang“</td>
+    <td>Die Chrome-Synchronisierung hat eine Größengrenze. Einträge kürzen oder
+        aufteilen.</td></tr>
+<tr><td>Alles ist gesperrt</td>
+    <td>Reiter <b>Lizenz</b> ansehen: Schlüssel eingetragen? Stand der Prüfung? Nach
+        14 Tagen ohne Netz fällt die Stufe zurück.</td></tr>
+</table>
+
+<h2 id="uebersicht">13. Tasten und Klicks</h2>
+<table>
+<tr><th><kbd>Strg</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd></th>
+    <td>Diktat ein- und ausschalten (in Chrome änderbar)</td></tr>
+<tr><th>Klick auf das Symbol</th><td>SpeechPilot auf diesem Tab ein-/ausblenden</td></tr>
+<tr><th>Klick auf den Mikrofon-Knopf</th><td>Mikrofon an und aus</td></tr>
+<tr><th><b>+</b> am Mikrofon-Knopf</th><td>Markierten Text als Makro speichern</td></tr>
+<tr><th><b>☰</b> am Mikrofon-Knopf</th><td>Leiste ein- und ausblenden</td></tr>
+<tr><th>Rechtsklick auf einen Leistenknopf</th><td>Text ändern</td></tr>
+<tr><th><kbd>Shift</kbd>+Klick auf Knopf oder Liste</th><td>Feld verknüpfen</td></tr>
+<tr><th><kbd>Alt</kbd>+Klick auf einen Knopf</th><td>Verknüpfung lösen</td></tr>
+<tr><th><kbd>Shift</kbd>+Klick in der Makroleiste</th><td>Gruppe ausblenden</td></tr>
+<tr><th><kbd>Esc</kbd></th><td>Verknüpfen abbrechen</td></tr>
+<tr><th><kbd>Windows</kbd>+<kbd>.</kbd></th><td>Emoji-Tastatur von Windows</td></tr>
+</table>
+<p><a class="knopf" href="/anleitung-de.pdf">Anleitung als PDF (zum Ausdrucken oder Weitergeben)</a></p>
+</main>
+<footer><div class="bahn">
+  © 2026 Benjamin Bertl · <a href="/bilder.html">Bilder</a> · <a href="/nutzung.html">Nutzung</a> · <a href="/datenschutz.html">Datenschutz</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+</div></footer>
+</body>
+</html>

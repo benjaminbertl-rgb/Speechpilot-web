@@ -1,0 +1,76 @@
+/* (c) 2026 Benjamin Alexander Bertl. Alle Rechte vorbehalten.
+   SpeechPilot - proprietaer, siehe LICENSE.
+   Bildschirm: dunkel wie die Einstellungsseite. Druck/PDF: hell. */
+
+:root {
+  color-scheme: dark;
+  --grund: #0b1120; --platte: #131c30; --schrift: #c3cee1;
+  --hell: #f2f6fc; --blass: #8fa0bd; --rand: rgba(255,255,255,.12);
+  --akzent: oklch(0.62 0.15 250);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--grund); color: var(--schrift);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main.bahn { max-width: 760px; margin: 0 auto; padding: 0 22px 60px; }
+h1 { color: var(--hell); font-size: 30px; line-height: 1.25; margin: 34px 0 12px; }
+h2 {
+  color: var(--hell); font-size: 21px; margin: 40px 0 10px;
+  padding-top: 14px; border-top: 1px solid var(--rand);
+}
+h3 { color: var(--hell); font-size: 17px; margin: 24px 0 8px; }
+p { margin: 0 0 14px; }
+a { color: var(--akzent); }
+ul, ol { padding-left: 20px; margin: 0 0 14px; }
+li { margin-bottom: 6px; }
+strong, b { color: var(--hell); }
+em { color: var(--blass); font-style: normal; }
+kbd {
+  font: 13px/1 ui-monospace, Consolas, monospace; color: var(--hell);
+  background: rgba(255,255,255,.07); border: 1px solid var(--rand);
+  border-radius: 5px; padding: 3px 6px; white-space: nowrap;
+}
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+th, td { border: 1px solid var(--rand); padding: 8px 11px; text-align: left; vertical-align: top; }
+th { color: var(--hell); background: rgba(255,255,255,.04); }
+td:first-child { white-space: nowrap; }
+.vorspann { font-size: 18px; color: var(--blass); margin-bottom: 24px; }
+.kachel {
+  background: var(--platte); border: 1px solid var(--rand);
+  border-radius: 12px; padding: 16px 20px; margin: 18px 0;
+}
+.kachel > :last-child { margin-bottom: 0; }
+.stufe {
+  display: inline-block; font-size: 12px; letter-spacing: .04em;
+  border: 1px solid var(--rand); border-radius: 999px;
+  padding: 2px 9px; margin-left: 8px; color: var(--blass); vertical-align: 3px;
+}
+.inhalt { margin: 0 0 20px; padding-left: 20px; columns: 2; column-gap: 30px; }
+.inhalt li { break-inside: avoid; }
+main.bahn footer {
+  border-top: 1px solid var(--rand); margin-top: 50px;
+  padding-top: 20px; color: var(--blass); font-size: 14px;
+}
+main.bahn footer a { color: var(--blass); }
+
+/* Druck und PDF: heller Grund, keine Kachelfarben, Seitenumbrueche schonen. */
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff; color: #1a1f2b; font-size: 11pt; line-height: 1.5; }
+  main.bahn { max-width: none; padding: 0; }
+  h1 { color: #000; font-size: 22pt; margin-top: 0; }
+  h2 { color: #000; font-size: 14pt; border-top: 1px solid #ccc; break-after: avoid; }
+  h3 { color: #000; font-size: 11.5pt; break-after: avoid; }
+  strong, b { color: #000; }
+  em, .vorspann, main.bahn footer, main.bahn footer a { color: #4a5262; }
+  a { color: #1a4f9c; }
+  kbd { color: #000; background: #f0f0f0; border-color: #bbb; }
+  table, .kachel { break-inside: avoid; }
+  th, td { border-color: #bbb; }
+  th { color: #000; background: #f0f0f0; }
+  .kachel { background: #f7f8fa; border-color: #ddd; }
+  .stufe { color: #4a5262; border-color: #bbb; }
+  .inhalt { columns: 2; }
+  main.bahn footer { border-top: 1px solid #ccc; }
+}
