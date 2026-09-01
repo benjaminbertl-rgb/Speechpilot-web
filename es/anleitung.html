@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manual — SpeechPilot</title>
+<meta name="description" content="El manual completo de SpeechPilot: dictado, sustituciones, emojis, macros, barra y licencia.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/icon-128.png">
+<link rel="apple-touch-icon" href="/icon-128.png">
+<link rel="alternate" hreflang="de" href="https://speechpilot.vip/anleitung.html">
+<link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/anleitung.html">
+<link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/anleitung.html">
+<link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/anleitung.html">
+<link rel="stylesheet" href="/stil.css">
+<link rel="stylesheet" href="/anleitung.css">
+</head>
+<body>
+<header><div class="bahn">
+  <a class="marke" href="/es/"><img src="/favicon-32.png" alt="" width="22" height="22">SpeechPilot</a>
+  <nav><a href="/es/">Inicio</a><a href="/es/anleitung.html">Manual</a><a href="/es/bilder.html">Imágenes</a><a href="/es/nutzung.html">Condiciones</a><a href="/es/datenschutz.html">Privacidad</a><span class="sprachen" aria-label="Idioma"><a href="/anleitung.html" hreflang="de">DE</a><a href="/en/anleitung.html" hreflang="en">EN</a><a class="aktiv" href="/es/anleitung.html" hreflang="es">ES</a></span></nav>
+</div></header>
+<main class="bahn">
+
+
+<h1>SpeechPilot — Manual</h1>
+<p class="vorspann">Dictar en vez de teclear: lo que dices aparece en el campo donde
+está el cursor. Este manual explica todo lo que hace la extensión, desde el primer
+clic hasta las macros, la barra y la licencia.</p>
+
+<ol class="inhalt">
+  <li><a href="#inicio">Primeros pasos</a></li>
+  <li><a href="#dictar">Dictar</a></li>
+  <li><a href="#puntuacion">Decir la puntuación</a></li>
+  <li><a href="#ajustes">Ajustes</a></li>
+  <li><a href="#sustituciones">Sustituciones</a></li>
+  <li><a href="#emojis">Emojis</a></li>
+  <li><a href="#macros">Macros</a></li>
+  <li><a href="#barra">La barra</a></li>
+  <li><a href="#copia">Copia de seguridad</a></li>
+  <li><a href="#licencia">Licencia</a></li>
+  <li><a href="#privacidad">Privacidad</a></li>
+  <li><a href="#problemas">Si algo falla</a></li>
+  <li><a href="#resumen">Teclas y clics</a></li>
+</ol>
+
+<h2 id="inicio">1. Primeros pasos</h2>
+
+<h3>Activar</h3>
+<p>Abre la página en la que quieres escribir y haz clic en el icono de SpeechPilot en
+la barra de Chrome. Abajo a la derecha aparece el botón del micrófono. Un segundo clic
+en el icono lo vuelve a ocultar.</p>
+<p>SpeechPilot solo está activo en la pestaña en la que lo has encendido. Una pestaña
+nueva necesita un clic nuevo.</p>
+
+<h3>Permitir el micrófono</h3>
+<p>La primera vez, Chrome pide el micrófono. La pregunta está arriba, en la barra de
+direcciones: responde <b>Permitir</b>. Sin permiso no se puede dictar. Después el
+permiso queda guardado, y lo pide SpeechPilot, no la página web.</p>
+<p>Si has pulsado <b>Bloquear</b> sin querer: haz clic en el candado o en el icono de
+controles a la izquierda de la barra de direcciones y permite ahí el micrófono.</p>
+
+<h3>Fijar el icono</h3>
+<p>Si no ves el icono, haz clic en la pieza de puzle arriba a la derecha en Chrome y
+fija SpeechPilot con la chincheta.</p>
+
+<h3>Abrir los ajustes</h3>
+<p>Clic derecho en el icono de SpeechPilot → <b>Opciones</b>. Ahí están todas las
+pestañas: ajustes, macros, emojis, sustituciones, barra, licencia y esta ayuda.</p>
+
+<h2 id="dictar">2. Dictar</h2>
+
+<h3>El flujo</h3>
+<ol>
+  <li>Haz clic en el campo en el que quieres escribir: el cursor tiene que parpadear
+      ahí.</li>
+  <li>Pulsa el botón del micrófono o
+      <kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>Y</kbd>.</li>
+  <li>Habla. El texto va apareciendo en el campo.</li>
+  <li>Vuelve a pulsar el botón o el atajo para apagar el micrófono.</li>
+</ol>
+<p>El texto va siempre al campo donde está el cursor. Si mientras tanto haces clic en
+otro campo, SpeechPilot sigue escribiendo ahí.</p>
+
+<h3>Intro</h3>
+<p>Mientras queda texto por procesar, SpeechPilot retiene la tecla Intro para que no
+salga media frase. De ahí la regla: <b>el primer Intro fija la frase, el segundo la
+envía.</b> Si no hay nada pendiente, Intro funciona de inmediato como siempre.</p>
+
+<h3>Mayúsculas</h3>
+<p>Al principio de la frase, después de <b>.</b> <b>!</b> <b>?</b> y tras un salto de
+línea se continúa en mayúscula. Lo hace SpeechPilot solo, en cualquier nivel de
+licencia.</p>
+
+<h3>Campos de contraseña</h3>
+<p>No se dicta nunca en campos de contraseña ni de pago. El intento se rechaza con un
+aviso breve.</p>
+
+<h3>Dónde funciona</h3>
+<p>En campos de texto normales, áreas de texto y la mayoría de editores de chat. No
+funciona en las páginas propias de Chrome (<em>chrome://…</em>, la Web Store) ni en el
+visor de PDF: ahí Chrome no deja escribir a ninguna extensión.</p>
+
+<h2 id="puntuacion">3. Decir la puntuación</h2>
+<p>Estas palabras se convierten en signos mientras dictas. Vienen de serie y funcionan
+en todos los niveles, también en la versión gratuita.</p>
+
+<table>
+<tr><th>Dicho</th><th>Escrito</th></tr>
+<tr><td>Punkt</td><td>.</td></tr>
+<tr><td>Komma</td><td>,</td></tr>
+<tr><td>Fragezeichen</td><td>?</td></tr>
+<tr><td>Ausrufezeichen</td><td>!</td></tr>
+<tr><td>Doppelpunkt</td><td>:</td></tr>
+<tr><td>Semikolon / Strichpunkt</td><td>;</td></tr>
+<tr><td>Bindestrich</td><td>-</td></tr>
+<tr><td>Gedankenstrich</td><td>–</td></tr>
+<tr><td>Klammer auf / Klammer zu</td><td>( )</td></tr>
+<tr><td>Anführungszeichen / Anführungszeichen zu</td><td>„ “</td></tr>
+<tr><td>neue Zeile</td><td>salto de línea</td></tr>
+<tr><td>neuer Absatz / Absatz</td><td>línea en blanco</td></tr>
+</table>
+
+<p><b>Estos comandos de serie son palabras alemanas</b>: SpeechPilot nació como
+herramienta alemana. Si dictas en español, crea tus propias palabras en
+<b>Sustituciones</b>: <em>punto</em> → <b>.</b>, <em>coma</em> → <b>,</b>,
+<em>interrogación</em> → <b>?</b>, etc. Forma parte del nivel Standard, y tus entradas
+tienen prioridad sobre las de serie.</p>
+<p>Los espacios los pone SpeechPilot: ninguno antes de <b>. , ! ? : ; )</b> y ninguno
+después de <b>(</b> ni de un salto de línea.</p>
+
+<h2 id="ajustes">4. Ajustes</h2>
+<p>Todos los interruptores de la primera pestaña actúan de inmediato, sin
+guardar.</p>
+
+<table>
+<tr><th>Ajuste</th><th>Qué hace</th></tr>
+<tr><td>Idioma de la interfaz</td>
+    <td>El idioma de esta página de ajustes y de los botones en la web: alemán,
+        inglés, español o «como el navegador». Actúa al instante y no tiene nada que
+        ver con el reconocimiento.</td></tr>
+<tr><td>Idioma del reconocimiento</td>
+    <td>El idioma en el que hablas. Disponibles: alemán (Alemania, Austria, Suiza),
+        inglés (EE. UU., Reino Unido), francés, español, italiano, neerlandés, polaco,
+        portugués y turco. El cambio surte efecto al encender el micrófono la próxima
+        vez, no a mitad de frase.</td></tr>
+<tr><td>Sustituir ß por ss</td>
+    <td>Grafía suiza. Vale también para las macros y los textos de la barra.</td></tr>
+<tr><td>Seguir en mayúscula tras un emoji</td>
+    <td>Un emoji suele cerrar la frase. Desactívalo si usas emojis a mitad de
+        frase.</td></tr>
+<tr><td>Mostrar el botón del micrófono en la página</td>
+    <td>Sin él, todo va por el icono de la barra de Chrome o por el atajo de
+        teclado.</td></tr>
+<tr><td>Mostrar la barra de macros en la página</td>
+    <td>Muestra, por grupo de letra, la última macro usada. Se puede
+        desplazar.</td></tr>
+<tr><td>Atajo de teclado</td>
+    <td>Por defecto <kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>Y</kbd>. Chrome gestiona los
+        atajos, por eso «cambiar» lleva a
+        <em>chrome://extensions/shortcuts</em>.</td></tr>
+<tr><td>Copia de seguridad</td>
+    <td>Exporta e importa todo de una vez: véase
+        <a href="#copia">Copia de seguridad</a>.</td></tr>
+</table>
+
+<h2 id="sustituciones">5. Sustituciones <span class="stufe">Standard</span></h2>
+<p>Lo que dices a la izquierda se escribe a la derecha. Pensado para términos
+técnicos, nombres propios y todo lo que el reconocimiento escribe siempre mal.</p>
+
+<h3>Crear una</h3>
+<ol>
+  <li>Abre la pestaña <b>Sustituciones</b> y pulsa <b>Añadir fila</b>.</li>
+  <li>A la izquierda la palabra dicha, a la derecha el texto que debe aparecer.</li>
+  <li><b>Guardar</b>: los cambios solo valen después.</li>
+</ol>
+
+<h3>Lo que conviene saber</h3>
+<ul>
+  <li><b>Solo palabras completas.</b> «casa» no sustituye las primeras cuatro letras
+      de «casaca».</li>
+  <li><b>Las diéresis y las mayúsculas dan igual.</b> «für» y «fuer» llegan a la misma
+      entrada.</li>
+  <li>También valen varias palabras: «un saludo cordial» → una despedida entera.</li>
+  <li>La puntuación de serie aparece al final de la lista. No hace falta crearla, y tu
+      propia entrada tiene prioridad sobre ella.</li>
+</ul>
+
+<h2 id="emojis">6. Emojis <span class="stufe">Standard</span></h2>
+<p>Una palabra dicha se convierte en un signo: práctico para todo lo que no se puede
+dictar.</p>
+<ol>
+  <li>Pestaña <b>Emojis</b> → <b>Añadir fila</b>.</li>
+  <li>A la izquierda la palabra, por ejemplo <em>pulgar</em>. A la derecha el signo:
+      escríbelo, abre el teclado de emojis de Windows con
+      <kbd>Windows</kbd>+<kbd>.</kbd>, o elige uno en <b>▾</b>.</li>
+  <li><b>Guardar</b>.</li>
+</ol>
+<p>Usa palabras que no dictes normalmente, o aparecerá un emoji a mitad de frase. Las
+diéresis y las mayúsculas se ignoran, igual que en las sustituciones.</p>
+<p>Si tras un emoji se sigue en mayúscula se ajusta en la primera pestaña.</p>
+
+<h2 id="macros">7. Macros <span class="stufe">Complete</span></h2>
+<p>Las macros son textos guardados que responden a un código corto: dices el código y
+aparece el texto entero.</p>
+
+<h3>Códigos</h3>
+<p>Un código es una letra con un número, por ejemplo <b>A1</b>. También se reconoce
+«A uno» o «A 1»: el reconocimiento escribe los números de una forma u otra según el
+día, así que SpeechPilot comprueba todas las variantes. Los números escritos con
+letra hasta doce se convierten en cifras.</p>
+<p>La página de ajustes avisa cuando dos códigos suenan igual al decirlos; si no, uno
+taparía al otro.</p>
+
+<h3>Crearlas</h3>
+<ul>
+  <li><b>En los ajustes:</b> pestaña <b>Macros</b> → <b>+ Nueva macro</b>, escribe
+      código y texto, <b>Guardar</b>.</li>
+  <li><b>Sobre la marcha:</b> selecciona texto en la web y pulsa el <b>+</b> junto al
+      botón del micrófono. SpeechPilot asigna el siguiente código libre.</li>
+</ul>
+
+<h3>Bloqueo</h3>
+<p>Para que el mismo texto no salga dos veces si te trabas, una macro usada se puede
+bloquear: <em>desactivado</em>, 1, 5 o 15 minutos, 1 u 8 horas, o <em>hasta
+reiniciar</em>. Las opciones con tiempo la liberan solas; con «hasta reiniciar»
+permanece bloqueada hasta que la liberas con <b>Liberar bloqueos</b>, por grupo de
+letra o todas. El recuento de usos se conserva.</p>
+
+<h3>Mantener la lista en orden</h3>
+<ul>
+  <li><b>Buscar</b> y <b>letra inicial</b> filtran la vista; las listas largas se
+      reparten en páginas.</li>
+  <li><b>Buscar duplicados</b> muestra las macros con el mismo texto.</li>
+  <li><b>Borrar lo mostrado</b> elimina justo lo que el filtro muestra: no se puede
+      deshacer.</li>
+</ul>
+
+<h3>Guardar e importar</h3>
+<p><b>Guardar macros</b> e <b>Importar macros</b> trabajan solo con las macros, aparte
+de la copia general. Al importar, SpeechPilot pregunta qué hacer:</p>
+<table>
+<tr><th>Reemplazar todo</th><td>Se descarta lo que había.</td></tr>
+<tr><th>Añadir</th><td>El archivo se suma a lo existente.</td></tr>
+<tr><th>Añadir sin textos duplicados</th>
+    <td>Igual que arriba, pero las macros cuyo texto ya existe se quedan fuera.</td></tr>
+</table>
+<p>Por espacio, las macros viven solo en este ordenador y no viajan con la
+sincronización de Chrome. A un segundo equipo llegan guardando e importando.</p>
+
+<h3>La barra de macros</h3>
+<p>Si está activada en la primera pestaña, muestra por grupo de letra la última macro
+usada y se puede desplazar con el ratón. <kbd>Mayús</kbd>+clic quita un grupo de la
+vista.</p>
+
+<div class="kachel">
+<p><b>Ten en cuenta:</b> algunas plataformas regulan si se pueden usar textos
+preescritos y cómo. Consulta las normas del sitio en el que trabajas y respétalas: la
+responsabilidad es tuya.</p>
+</div>
+
+<h2 id="barra">8. La barra <span class="stufe">Complete</span></h2>
+<p>La barra es la tira de botones del borde derecho. El <b>☰</b> junto al botón del
+micrófono la muestra y la oculta. Contiene botones de texto y tres listas
+desplegables.</p>
+
+<h3>Botones de texto</h3>
+<ul>
+  <li><b>Poner el texto:</b> clic derecho en el botón. Un botón todavía vacío abre la
+      entrada también con un clic normal.</li>
+  <li><b>Usarlo:</b> un clic; el texto va al campo vinculado o, si no hay ninguno, al
+      campo donde está el cursor.</li>
+</ul>
+
+<h3>Vincular un campo</h3>
+<p>Para que un botón escriba siempre en el mismo campo:</p>
+<ol>
+  <li><kbd>Mayús</kbd>+clic en el botón o en la lista.</li>
+  <li>Haz clic en el campo de la página. <kbd>Esc</kbd> cancela.</li>
+</ol>
+<p><kbd>Alt</kbd>+clic deshace el vínculo.</p>
+<p>Se recuerda la <b>posición</b> del campo, no su nombre: las webs cambian los
+nombres constantemente. Si la página muestra u oculta un campo, las posiciones se
+desplazan y hay que vincular de nuevo. Eso es lo que significa «el campo n.º 3 no
+existe en esta página».</p>
+
+<h3>Las tres listas</h3>
+<p>Profesiones, aficiones y nombres se editan en los ajustes, en la pestaña
+<b>Barra</b>: una entrada por línea. Al guardar se quitan las líneas vacías y los
+duplicados y se ordena todo alfabéticamente. Las listas son comunes a <b>todos</b> los
+perfiles.</p>
+
+<h3>Perfiles</h3>
+<p>Los perfiles se crean en la propia barra, no en los ajustes. Cada perfil tiene sus
+textos y sus vínculos de campo: un juego a medida para cada web. Renombrar y borrar
+también se hacen ahí; al borrar un perfil desaparecen sus textos y vínculos.</p>
+
+<h3>Espacio</h3>
+<p>El ancho de la barra se puede arrastrar. Con <b>Estrechar la página</b> la web se
+aparta en vez de quedar debajo de la barra.</p>
+
+<h2 id="copia">9. Copia de seguridad</h2>
+<p>En la primera pestaña, <b>exportar</b> guarda todo en un archivo: emojis,
+sustituciones, macros, la barra con sus perfiles y todos los ajustes.</p>
+<p><b>importar</b> reemplaza todo el contenido; se pregunta antes. Si solo quieres
+mover macros, usa el camino propio de la pestaña Macros; si SpeechPilot detecta al
+importar un archivo que solo contiene macros, lo advierte en vez de borrarlo todo.</p>
+<p>Haz una copia antes de cambios grandes. Es también la vía para pasar a un segundo
+ordenador.</p>
+
+<h2 id="licencia">10. Licencia</h2>
+<p>Dictar, la puntuación de serie y las mayúsculas están siempre incluidos, también
+sin licencia.</p>
+
+<table>
+<tr><th>Nivel</th><th>Incluye</th></tr>
+<tr><td>Versión gratuita</td>
+    <td>Dictado, puntuación de serie, mayúsculas.</td></tr>
+<tr><td>Standard</td><td>Además, sustituciones propias y palabras de emoji propias.</td></tr>
+<tr><td>Complete</td><td>Además, macros y la barra en la página.</td></tr>
+</table>
+
+<h3>Activar</h3>
+<p>Escribe en la pestaña <b>Licencia</b> la clave del correo que recibiste al comprar
+y pulsa <b>Activar</b>. La clave se queda en este equipo y se comprueba como mucho una
+vez al día.</p>
+
+<h3>Sin conexión</h3>
+<p>Si el servidor de licencias no está disponible, el último nivel confirmado sigue
+valiendo <b>14 días</b>. Solo después baja a la versión gratuita, hasta que una
+comprobación vuelva a funcionar.</p>
+
+<h3>Cambio de equipo</h3>
+<p>Cada clave tiene un número limitado de activaciones; el estado aparece en la
+pestaña Licencia. <b>Quitar la licencia</b> libera la plaza y la misma clave se puede
+usar en otro ordenador. Si en ese momento no había conexión, la plaza se libera en la
+siguiente ocasión.</p>
+
+<h3>Qué pasa con lo bloqueado</h3>
+<p>No se pierde nada. Las macros y los textos de la barra siguen guardados, solo que
+sin el nivel adecuado no se usan. Tras activar están disponibles al momento, sin
+recargar la página.</p>
+
+<h2 id="privacidad">11. Privacidad</h2>
+<ul>
+  <li>Del reconocimiento se encarga Chrome con el reconocimiento de voz de Google,
+      como en la mayoría de extensiones de dictado.</li>
+  <li>Ocurre en una zona aislada de la extensión, no en la web: la página no ve ni tu
+      audio ni el texto reconocido, solo lo que se escribe en su campo.</li>
+  <li>SpeechPilot no guarda ni la grabación ni el texto reconocido.</li>
+  <li>Los ajustes, las sustituciones y los emojis van en la sincronización de Chrome;
+      las macros se quedan en este equipo.</li>
+  <li>Sin cuenta y sin registro. Lo único que sale del ordenador es la comprobación de
+      la licencia, como mucho una vez al día.</li>
+</ul>
+<p>La declaración completa está en
+<a href="https://speechpilot.vip/es/datenschutz.html">speechpilot.vip/es/datenschutz.html</a>.</p>
+
+<h2 id="problemas">12. Si algo falla</h2>
+
+<table>
+<tr><th>Lo que ves</th><th>Causa y solución</th></tr>
+<tr><td>No aparece el botón del micrófono</td>
+    <td>SpeechPilot no está activo en esta pestaña (haz clic en el icono) o el botón
+        está oculto en los ajustes. En las páginas <em>chrome://</em> y en la Web Store
+        Chrome no permite ninguna extensión.</td></tr>
+<tr><td>No pasa nada al hablar</td>
+    <td>Falta el permiso del micrófono: la pregunta está en la barra de direcciones. Si
+        no, permítelo con el icono a la izquierda de esa barra.</td></tr>
+<tr><td>El texto va al campo equivocado</td>
+    <td>El cursor estaba en otro sitio. Haz clic en el campo deseado; para destinos
+        fijos, vincula los botones de la barra.</td></tr>
+<tr><td>«No se dicta en campos de contraseña ni de pago»</td>
+    <td>Es intencionado.</td></tr>
+<tr><td>«El texto no se ha podido insertar aquí»</td>
+    <td>El campo no acepta texto de fuera, normalmente un editor especial. Ahí solo
+        queda teclear.</td></tr>
+<tr><td>Intro no envía</td>
+    <td>Quedaba texto en proceso; ese Intro lo ha fijado. El siguiente envía.</td></tr>
+<tr><td>Una macro no sale</td>
+    <td>Está bloqueada («ya se ha usado»): <b>Liberar bloqueos</b> en la pestaña
+        Macros. O el reconocimiento ha escrito el código de otra forma: mira el texto
+        del campo y crea un segundo código si hace falta.</td></tr>
+<tr><td>Un botón de la barra escribe donde no debe</td>
+    <td>La página ha mostrado u ocultado un campo y la posición ya no coincide. Vuelve
+        a vincular con <kbd>Mayús</kbd>+clic.</td></tr>
+<tr><td>Dos botones de micrófono</td>
+    <td>Puede pasar tras una actualización con la pestaña abierta. Recarga la
+        página.</td></tr>
+<tr><td>Los cambios en sustituciones o emojis no hacen efecto</td>
+    <td>Falta <b>Guardar</b>: a diferencia de los interruptores de la primera pestaña,
+        las listas solo valen después.</td></tr>
+<tr><td>«No se ha guardado: la lista es demasiado larga»</td>
+    <td>La sincronización de Chrome tiene un límite de tamaño. Acorta o reparte las
+        entradas.</td></tr>
+<tr><td>Todo está bloqueado</td>
+    <td>Mira la pestaña <b>Licencia</b>: ¿hay clave escrita? ¿cuándo se comprobó? Tras
+        14 días sin conexión el nivel baja.</td></tr>
+</table>
+
+<h2 id="resumen">13. Teclas y clics</h2>
+<table>
+<tr><th><kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>Y</kbd></th>
+    <td>Encender y apagar el dictado (modificable en Chrome)</td></tr>
+<tr><th>Clic en el icono</th><td>Mostrar/ocultar SpeechPilot en esta pestaña</td></tr>
+<tr><th>Clic en el botón del micrófono</th><td>Micrófono encendido y apagado</td></tr>
+<tr><th><b>+</b> junto al micrófono</th><td>Guardar el texto seleccionado como macro</td></tr>
+<tr><th><b>☰</b> junto al micrófono</th><td>Mostrar y ocultar la barra</td></tr>
+<tr><th>Clic derecho en un botón de la barra</th><td>Cambiar su texto</td></tr>
+<tr><th><kbd>Mayús</kbd>+clic en un botón o lista</th><td>Vincular un campo</td></tr>
+<tr><th><kbd>Alt</kbd>+clic en un botón</th><td>Deshacer el vínculo</td></tr>
+<tr><th><kbd>Mayús</kbd>+clic en la barra de macros</th><td>Ocultar un grupo</td></tr>
+<tr><th><kbd>Esc</kbd></th><td>Cancelar la vinculación</td></tr>
+<tr><th><kbd>Windows</kbd>+<kbd>.</kbd></th><td>Teclado de emojis de Windows</td></tr>
+</table>
+<p><a class="knopf" href="/anleitung-es.pdf">Manual en PDF (para imprimir o compartir)</a></p>
+</main>
+<footer><div class="bahn">
+  © 2026 Benjamin Bertl · <a href="/es/bilder.html">Imágenes</a> · <a href="/es/nutzung.html">Condiciones</a> · <a href="/es/datenschutz.html">Privacidad</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+</div></footer>
+</body>
+</html>

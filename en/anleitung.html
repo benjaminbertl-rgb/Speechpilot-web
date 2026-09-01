@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manual — SpeechPilot</title>
+<meta name="description" content="The complete SpeechPilot manual: dictating, replacements, emoji, macros, the bar and licences.">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/icon-128.png">
+<link rel="apple-touch-icon" href="/icon-128.png">
+<link rel="alternate" hreflang="de" href="https://speechpilot.vip/anleitung.html">
+<link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/anleitung.html">
+<link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/anleitung.html">
+<link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/anleitung.html">
+<link rel="stylesheet" href="/stil.css">
+<link rel="stylesheet" href="/anleitung.css">
+</head>
+<body>
+<header><div class="bahn">
+  <a class="marke" href="/en/"><img src="/favicon-32.png" alt="" width="22" height="22">SpeechPilot</a>
+  <nav><a href="/en/">Home</a><a href="/en/anleitung.html">Manual</a><a href="/en/bilder.html">Screenshots</a><a href="/en/nutzung.html">Terms</a><a href="/en/datenschutz.html">Privacy</a><span class="sprachen" aria-label="Language"><a href="/anleitung.html" hreflang="de">DE</a><a class="aktiv" href="/en/anleitung.html" hreflang="en">EN</a><a href="/es/anleitung.html" hreflang="es">ES</a></span></nav>
+</div></header>
+<main class="bahn">
+
+
+<h1>SpeechPilot — Manual</h1>
+<p class="vorspann">Dictate instead of typing: what you say goes into the field the
+cursor sits in. This manual covers everything the extension does — from the first
+click to macros, the bar and licences.</p>
+
+<ol class="inhalt">
+  <li><a href="#start">Getting started</a></li>
+  <li><a href="#dictating">Dictating</a></li>
+  <li><a href="#punctuation">Speaking punctuation</a></li>
+  <li><a href="#settings">Settings</a></li>
+  <li><a href="#replacements">Replacements</a></li>
+  <li><a href="#emoji">Emoji</a></li>
+  <li><a href="#macros">Macros</a></li>
+  <li><a href="#bar">The bar</a></li>
+  <li><a href="#backup">Backup</a></li>
+  <li><a href="#licence">Licence</a></li>
+  <li><a href="#privacy">Privacy</a></li>
+  <li><a href="#trouble">When something goes wrong</a></li>
+  <li><a href="#overview">Keys and clicks</a></li>
+</ol>
+
+<h2 id="start">1. Getting started</h2>
+
+<h3>Switching on</h3>
+<p>Open the website you want to write on and click the SpeechPilot icon in the Chrome
+toolbar. The microphone button appears at the bottom right of the page. Clicking the
+icon again hides it.</p>
+<p>SpeechPilot is only active on the tab you switched it on in. A new tab needs a new
+click.</p>
+
+<h3>Allowing the microphone</h3>
+<p>The first time you switch on, Chrome asks for the microphone. The prompt is at the
+top, in the address bar — answer with <b>Allow</b>. Without it there is no dictation.
+The permission then stays, and it is requested by SpeechPilot itself, not by the
+website.</p>
+<p>If you clicked <b>Block</b> by mistake: click the lock or slider icon on the left
+of the address bar and allow the microphone there.</p>
+
+<h3>Pinning the icon</h3>
+<p>If the icon is not visible, click the puzzle piece at the top right of Chrome and
+pin SpeechPilot.</p>
+
+<h3>Opening the settings</h3>
+<p>Right-click the SpeechPilot icon → <b>Options</b>. That is where all the tabs live:
+settings, macros, emoji, replacements, bar, licence and this help.</p>
+
+<h2 id="dictating">2. Dictating</h2>
+
+<h3>How it goes</h3>
+<ol>
+  <li>Click into the field you want to write in — the cursor has to be blinking in
+      it.</li>
+  <li>Click the microphone button or press
+      <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>.</li>
+  <li>Speak. The text appears in the field as you go.</li>
+  <li>Click again, or press the shortcut, to switch the microphone off.</li>
+</ol>
+<p>Text always goes into the field the cursor sits in. Click into another field in
+between and SpeechPilot carries on writing there.</p>
+
+<h3>Enter</h3>
+<p>While text is still being processed, SpeechPilot holds the Enter key back so half a
+message never goes out. Hence the rule of thumb: <b>the first Enter commits the
+sentence, the second sends it.</b> When nothing is pending, Enter works as usual
+straight away.</p>
+
+<h3>Capitals</h3>
+<p>At the start of a sentence, after <b>.</b> <b>!</b> <b>?</b> and after a line
+break, the next word is capitalised. SpeechPilot does that on its own, in every
+licence tier.</p>
+
+<h3>Password fields</h3>
+<p>Dictation never writes into password or payment fields. The attempt is refused with
+a short notice.</p>
+
+<h3>Where it works</h3>
+<p>In ordinary input fields, text areas and most chat editors. Not on Chrome's own
+pages (<em>chrome://…</em>, the Web Store) or in the PDF viewer — Chrome lets no
+extension write there.</p>
+
+<h2 id="punctuation">3. Speaking punctuation</h2>
+<p>These words are turned into characters as you dictate. They are built in and work
+in every tier, including the free version.</p>
+
+<table>
+<tr><th>Spoken</th><th>Written</th></tr>
+<tr><td>Punkt</td><td>.</td></tr>
+<tr><td>Komma</td><td>,</td></tr>
+<tr><td>Fragezeichen</td><td>?</td></tr>
+<tr><td>Ausrufezeichen</td><td>!</td></tr>
+<tr><td>Doppelpunkt</td><td>:</td></tr>
+<tr><td>Semikolon / Strichpunkt</td><td>;</td></tr>
+<tr><td>Bindestrich</td><td>-</td></tr>
+<tr><td>Gedankenstrich</td><td>–</td></tr>
+<tr><td>Klammer auf / Klammer zu</td><td>( )</td></tr>
+<tr><td>Anführungszeichen / Anführungszeichen zu</td><td>„ “</td></tr>
+<tr><td>neue Zeile</td><td>line break</td></tr>
+<tr><td>neuer Absatz / Absatz</td><td>blank line</td></tr>
+</table>
+
+<p><b>These built-in commands are German words</b> — SpeechPilot started out as a
+German tool. If you dictate in English, add your own words under
+<b>Replacements</b>: <em>period</em> → <b>.</b>, <em>comma</em> → <b>,</b>,
+<em>question mark</em> → <b>?</b> and so on. That is part of the Standard tier, and
+your own entries take precedence over the built-in ones.</p>
+<p>Spacing is handled for you: no space before <b>. , ! ? : ; )</b> and none after
+<b>(</b> or a line break.</p>
+
+<h2 id="settings">4. Settings</h2>
+<p>Every switch in the first tab takes effect immediately, with no saving.</p>
+
+<table>
+<tr><th>Setting</th><th>What it does</th></tr>
+<tr><td>Interface language</td>
+    <td>The language of the settings page and of the buttons on the website: German,
+        English, Spanish, or "same as the browser". Takes effect at once and has
+        nothing to do with recognition.</td></tr>
+<tr><td>Recognition language</td>
+    <td>The language you speak. Available: German (Germany, Austria, Switzerland),
+        English (US, UK), French, Spanish, Italian, Dutch, Polish, Portuguese and
+        Turkish. A change takes effect the next time you switch the microphone on,
+        not mid-sentence.</td></tr>
+<tr><td>Replace ß with ss</td>
+    <td>Swiss spelling. Applies to macros and bar texts as well.</td></tr>
+<tr><td>Capitalise after an emoji</td>
+    <td>An emoji usually ends a sentence. Turn it off if you often use emoji
+        mid-sentence.</td></tr>
+<tr><td>Show the microphone button on the page</td>
+    <td>With it hidden, everything runs through the toolbar icon or the keyboard
+        shortcut.</td></tr>
+<tr><td>Show the macro bar on the page</td>
+    <td>Shows the most recently used macro per letter group. The bar can be
+        dragged.</td></tr>
+<tr><td>Keyboard shortcut</td>
+    <td>The default is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>. Chrome manages
+        shortcuts itself, so "change" takes you to
+        <em>chrome://extensions/shortcuts</em>.</td></tr>
+<tr><td>Backup</td>
+    <td>Exports and imports everything in one file — see <a href="#backup">Backup</a>.</td></tr>
+</table>
+
+<h2 id="replacements">5. Replacements <span class="stufe">Standard</span></h2>
+<p>What you say on the left is written on the right. Made for technical terms, proper
+names and anything recognition keeps getting wrong.</p>
+
+<h3>Adding one</h3>
+<ol>
+  <li>Open the <b>Replacements</b> tab and click <b>Add row</b>.</li>
+  <li>The spoken word on the left, the text that should appear on the right.</li>
+  <li><b>Save</b> — changes only apply after that.</li>
+</ol>
+
+<h3>Worth knowing</h3>
+<ul>
+  <li><b>Whole words only.</b> "house" does not replace the first five letters of
+      "houseboat".</li>
+  <li><b>Umlauts and case don't matter.</b> "für" and "fuer" hit the same entry.</li>
+  <li>Several words are fine too: "kind regards" → a whole sign-off.</li>
+  <li>The built-in punctuation is listed at the bottom of the tab. You don't have to
+      add it — and your own entry overrides it.</li>
+</ul>
+
+<h2 id="emoji">6. Emoji <span class="stufe">Standard</span></h2>
+<p>A spoken word becomes a character — useful for everything you cannot dictate.</p>
+<ol>
+  <li><b>Emoji</b> tab → <b>Add row</b>.</li>
+  <li>The word on the left, for example <em>thumbs</em>. The character on the right:
+      type it, open the Windows emoji keyboard with <kbd>Windows</kbd>+<kbd>.</kbd>,
+      or pick one from the small selection under <b>▾</b>.</li>
+  <li><b>Save</b>.</li>
+</ol>
+<p>Use words you would not otherwise dictate, or an emoji will turn up mid-sentence.
+Umlauts and case are ignored, as with replacements.</p>
+<p>Whether the next word is capitalised after an emoji is set in the first tab.</p>
+
+<h2 id="macros">7. Macros <span class="stufe">Complete</span></h2>
+<p>Macros are stored texts that answer to a short code: say the code, the whole text
+appears.</p>
+
+<h3>Codes</h3>
+<p>A code is a letter plus a number, for example <b>A1</b>. "A one" and "A 1" are
+recognised too — speech recognition writes numbers differently depending on its mood,
+so SpeechPilot checks every form. Number words up to twelve are turned into
+digits.</p>
+<p>The settings page warns you when two codes sound the same when spoken — otherwise
+one would hide the other.</p>
+
+<h3>Creating them</h3>
+<ul>
+  <li><b>In the settings:</b> <b>Macros</b> tab → <b>+ New macro</b>, enter code and
+      text, <b>Save</b>.</li>
+  <li><b>As you go:</b> select text on the website and click the <b>+</b> next to the
+      microphone button. SpeechPilot assigns the next free code.</li>
+</ul>
+
+<h3>Locking</h3>
+<p>So the same text does not go out twice when you misspeak, a used macro can be
+locked: <em>off</em>, 1, 5 or 15 minutes, 1 or 8 hours, or <em>until reset</em>. The
+timed options release the macro on their own; with "until reset" it stays locked until
+you release it under <b>Release locks</b> — either one letter group or all of them.
+The count of how often a macro has been used is kept.</p>
+
+<h3>Keeping the list in order</h3>
+<ul>
+  <li><b>Search</b> and <b>first letter</b> filter the view; long lists are spread
+      across pages.</li>
+  <li><b>Find duplicates</b> shows macros with identical text.</li>
+  <li><b>Delete shown</b> removes exactly what the current filter displays — that
+      cannot be undone.</li>
+</ul>
+
+<h3>Saving and importing</h3>
+<p><b>Save macros</b> and <b>Import macros</b> deal with macros only, separately from
+the general backup. On import, SpeechPilot asks what should happen:</p>
+<table>
+<tr><th>Replace everything</th><td>The existing set is discarded.</td></tr>
+<tr><th>Add</th><td>The file is added to what is there.</td></tr>
+<tr><th>Add without duplicate texts</th>
+    <td>As above, but macros whose text already exists are left out.</td></tr>
+</table>
+<p>For space reasons macros live on this computer only and do not travel through
+Chrome sync. Saving and importing is how they reach a second device.</p>
+
+<h3>The macro bar</h3>
+<p>Switched on in the first tab, it shows the most recently used macro per letter
+group and can be dragged around. <kbd>Shift</kbd>+click removes a group from the
+display.</p>
+
+<div class="kachel">
+<p><b>Please note:</b> some platforms have rules about whether and how pre-written
+texts may be used. Check the rules of the site you work on and follow them — that
+responsibility is yours.</p>
+</div>
+
+<h2 id="bar">8. The bar <span class="stufe">Complete</span></h2>
+<p>The bar is the button strip on the right edge of the page. The <b>☰</b> next to the
+microphone button shows and hides it. It holds text buttons and three drop-down
+lists.</p>
+
+<h3>Text buttons</h3>
+<ul>
+  <li><b>Setting the text:</b> right-click the button. A button that is still empty
+      opens the input on an ordinary click as well.</li>
+  <li><b>Using it:</b> click — the text goes into the linked field, or otherwise into
+      the field the cursor sits in.</li>
+</ul>
+
+<h3>Linking a field</h3>
+<p>To make a button always write into the same field:</p>
+<ol>
+  <li><kbd>Shift</kbd>+click the button or the list.</li>
+  <li>Click the field on the page. <kbd>Esc</kbd> cancels.</li>
+</ol>
+<p><kbd>Alt</kbd>+click releases the link again.</p>
+<p>What is remembered is the field's <b>position</b>, not its name — websites change
+names all the time. If the page shows or hides a field, the positions shift and the
+link has to be set again. That is what "field no. 3 does not exist on this page"
+means.</p>
+
+<h3>The three lists</h3>
+<p>Occupations, hobbies and names are maintained in the settings, in the <b>Bar</b>
+tab: one entry per line. On saving, blank lines and duplicates are removed and
+everything is sorted alphabetically. The lists are shared by <b>all</b> profiles.</p>
+
+<h3>Profiles</h3>
+<p>Profiles are created in the bar itself, not in the settings. Each profile has its
+own texts and its own field links — one matching set per website. Renaming and
+deleting happen there too; deleting a profile removes its texts and links.</p>
+
+<h3>Space</h3>
+<p>The width of the bar can be dragged. <b>Make the page narrower</b> pushes the
+website aside instead of letting the bar sit on top of it.</p>
+
+<h2 id="backup">9. Backup</h2>
+<p>In the first tab, <b>export</b> writes everything into one file: emoji,
+replacements, macros, the bar with its profiles, and all settings.</p>
+<p><b>import</b> replaces the entire set — you are asked first. If you only want to
+move macros, use the separate route in the Macros tab; when SpeechPilot recognises a
+pure macro file on import, it says so instead of wiping everything.</p>
+<p>Make a backup before larger changes. It is also the way onto a second computer.</p>
+
+<h2 id="licence">10. Licence</h2>
+<p>Dictation, the built-in punctuation and capitalisation are always included — even
+without a licence.</p>
+
+<table>
+<tr><th>Tier</th><th>Includes</th></tr>
+<tr><td>Free version</td><td>Dictation, built-in punctuation, capitalisation.</td></tr>
+<tr><td>Standard</td><td>Plus your own replacements and your own emoji words.</td></tr>
+<tr><td>Complete</td><td>Plus macros and the bar on the page.</td></tr>
+</table>
+
+<h3>Unlocking</h3>
+<p>Enter the key from the email you got after buying into the <b>Licence</b> tab and
+click <b>Unlock</b>. The key stays on this device and is re-checked at most once a
+day.</p>
+
+<h3>Without a connection</h3>
+<p>If the licence server cannot be reached, the last confirmed tier keeps working for
+another <b>14 days</b>. Only after that does it fall back to the free version, until
+the next check succeeds.</p>
+
+<h3>Changing device</h3>
+<p>Every key has a limited number of activations; the count is shown in the Licence
+tab. <b>Remove licence</b> frees the slot again — the same key can then be entered on
+another computer. If the server was unreachable at that moment, the slot is freed at
+the next opportunity.</p>
+
+<h3>What happens to locked content</h3>
+<p>Nothing is lost. Macros and bar texts stay stored, they are simply not used without
+the matching tier. After unlocking they are available immediately, with no need to
+reload the page.</p>
+
+<h2 id="privacy">11. Privacy</h2>
+<ul>
+  <li>Recognition is done by Chrome using Google's speech recognition — as in most
+      dictation extensions.</li>
+  <li>It runs in a shielded part of the extension, not in the website: the page sees
+      neither your audio nor the recognised text — only what is written into its input
+      field.</li>
+  <li>SpeechPilot stores neither the recording nor the recognised text.</li>
+  <li>Settings, replacements and emoji live in Chrome sync; macros stay local to this
+      device.</li>
+  <li>No account, no sign-in. The only thing that leaves your computer is the licence
+      check, at most once a day.</li>
+</ul>
+<p>The full statement is at
+<a href="https://speechpilot.vip/en/datenschutz.html">speechpilot.vip/en/datenschutz.html</a>.</p>
+
+<h2 id="trouble">12. When something goes wrong</h2>
+
+<table>
+<tr><th>What you see</th><th>Cause and remedy</th></tr>
+<tr><td>No microphone button</td>
+    <td>SpeechPilot is not switched on for this tab (click the icon), or the button is
+        hidden in the settings. On <em>chrome://</em> pages and in the Web Store,
+        Chrome allows no extension at all.</td></tr>
+<tr><td>Nothing happens when you speak</td>
+    <td>The microphone has not been allowed — the prompt is in the address bar.
+        Otherwise allow it via the icon on the left of the address bar.</td></tr>
+<tr><td>Text lands in the wrong field</td>
+    <td>The cursor was elsewhere. Click into the field you want; for fixed targets,
+        link the bar's buttons.</td></tr>
+<tr><td>"Dictation does not write into password or payment fields"</td>
+    <td>That is intended.</td></tr>
+<tr><td>"The text could not be inserted here"</td>
+    <td>The field refuses text from outside — usually a special editor. There, typing
+        is the only way.</td></tr>
+<tr><td>Enter does not send</td>
+    <td>Text was still being processed; that Enter committed it. The next one
+        sends.</td></tr>
+<tr><td>A macro does not come out</td>
+    <td>It is locked ("already used") — <b>Release locks</b> in the Macros tab. Or
+        recognition wrote the code differently: look at the text in the field and add
+        a second code if needed.</td></tr>
+<tr><td>A bar button writes into the wrong place</td>
+    <td>The page showed or hid a field, so the position no longer matches. Set the
+        link again with <kbd>Shift</kbd>+click.</td></tr>
+<tr><td>Two microphone buttons</td>
+    <td>Can happen after an update while the tab was open. Reload the page.</td></tr>
+<tr><td>Changes to replacements or emoji have no effect</td>
+    <td>Don't forget <b>Save</b> — unlike the switches in the first tab, the lists only
+        apply afterwards.</td></tr>
+<tr><td>"Not saved: the list is too long"</td>
+    <td>Chrome sync has a size limit. Shorten or split the entries.</td></tr>
+<tr><td>Everything is locked</td>
+    <td>Check the <b>Licence</b> tab: is a key entered? When was it last checked?
+        After 14 days without a connection the tier falls back.</td></tr>
+</table>
+
+<h2 id="overview">13. Keys and clicks</h2>
+<table>
+<tr><th><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd></th>
+    <td>Turn dictation on and off (changeable in Chrome)</td></tr>
+<tr><th>Click the toolbar icon</th><td>Show/hide SpeechPilot on this tab</td></tr>
+<tr><th>Click the microphone button</th><td>Microphone on and off</td></tr>
+<tr><th><b>+</b> next to the microphone button</th><td>Save selected text as a macro</td></tr>
+<tr><th><b>☰</b> next to the microphone button</th><td>Show and hide the bar</td></tr>
+<tr><th>Right-click a bar button</th><td>Change its text</td></tr>
+<tr><th><kbd>Shift</kbd>+click a button or list</th><td>Link a field</td></tr>
+<tr><th><kbd>Alt</kbd>+click a button</th><td>Release the link</td></tr>
+<tr><th><kbd>Shift</kbd>+click in the macro bar</th><td>Hide a group</td></tr>
+<tr><th><kbd>Esc</kbd></th><td>Cancel linking</td></tr>
+<tr><th><kbd>Windows</kbd>+<kbd>.</kbd></th><td>Windows emoji keyboard</td></tr>
+</table>
+<p><a class="knopf" href="/anleitung-en.pdf">Manual as a PDF (for printing or passing on)</a></p>
+</main>
+<footer><div class="bahn">
+  © 2026 Benjamin Bertl · <a href="/en/bilder.html">Screenshots</a> · <a href="/en/nutzung.html">Terms</a> · <a href="/en/datenschutz.html">Privacy</a> · <a href="mailto:contact@speechpilot.vip">contact@speechpilot.vip</a>
+</div></footer>
+</body>
+</html>
