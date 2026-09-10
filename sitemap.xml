@@ -108,6 +108,33 @@
     <lastmod>2026-09-04</lastmod>
     <priority>0.8</priority>
   </url>
+<url>
+    <loc>https://speechpilot.vip/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://speechpilot.vip/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/faq.html"/>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speechpilot.vip/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://speechpilot.vip/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/faq.html"/>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://speechpilot.vip/es/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://speechpilot.vip/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://speechpilot.vip/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://speechpilot.vip/es/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://speechpilot.vip/faq.html"/>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://speechpilot.vip/nutzung.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://speechpilot.vip/nutzung.html"/>
