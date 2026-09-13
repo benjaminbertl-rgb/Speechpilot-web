@@ -8,13 +8,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="stylesheet" href="/stil.css">
 <style>
-.wahl{display:block;padding:10px 14px;margin:0 0 8px;border:1px solid var(--rand);border-radius:9px;cursor:pointer}
-.wahl:has(input:checked){border-color:var(--akzent);background:rgba(255,255,255,.04)}
-textarea,input[type=email]{width:100%;background:var(--platte);color:var(--hell);border:1px solid var(--rand);border-radius:9px;padding:10px 12px;font:inherit;margin:4px 0 14px}
-textarea{min-height:90px;resize:vertical}
-button{border:0;cursor:pointer;font:inherit}
-.falle{position:absolute;left:-9999px}
-.meldung{display:none} .meldung:target{display:block}
+iframe{width:100%;min-height:760px;border:0;background:var(--platte);border-radius:12px}
 </style>
 </head>
 <body>
@@ -24,26 +18,12 @@ button{border:0;cursor:pointer;font:inherit}
 </div></header>
 <main class="bahn">
 <h1>Schade, dass du gehst</h1>
-<p class="vorspann">Eine Frage, zehn Sekunden, kein Konto: Warum hast du SpeechPilot entfernt? Damit wird es für die Nächsten besser.</p>
-<p class="kachel meldung" id="danke">Danke! Deine Antwort ist angekommen. Falls du es dir anders überlegst: SpeechPilot steht weiter im Chrome Web Store.</p>
-<p class="kachel meldung" id="fehler">Das hat nicht geklappt. Schreib gern direkt an contact@speechpilot.vip.</p>
-<!-- Ziel: /feedback.php (Mail an contact@). Die Version kommt aus
-     setUninstallURL (?v=...) und geht per Skript unten mit. -->
-<form method="post" action="/feedback.php">
-  <label class="wahl"><input type="radio" name="grund" value="erkennung"> Die Erkennung war zu ungenau oder zu langsam</label>
-  <label class="wahl"><input type="radio" name="grund" value="kompliziert"> Zu kompliziert — ich habe mich nicht zurechtgefunden</label>
-  <label class="wahl"><input type="radio" name="grund" value="unnoetig"> Brauche ich nicht mehr / wollte nur ausprobieren</label>
-  <label for="text">Sonst noch etwas? (freiwillig)</label>
-  <textarea id="text" name="text" maxlength="2000"></textarea>
-  <label for="mail">Deine E-Mail, falls du eine Antwort willst (freiwillig)</label>
-  <input type="email" id="mail" name="mail" maxlength="200">
-  <input class="falle" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-  <input type="hidden" name="sprache" value="de">
-  <input type="hidden" name="v" id="v">
-  <button class="knopf" type="submit">Abschicken</button>
-</form>
+<p class="vorspann">Eine Frage, zehn Sekunden: Warum hast du SpeechPilot entfernt? Damit wird es für die Nächsten besser.</p>
+<!-- Google Formular. Die Antworten laufen in Bens Drive; die Seite selbst
+     speichert nichts (GitHub Pages liefert nur statische Dateien). -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGwCcfC61z2Bl71Rb1H9_2AK3BhHPni3P2-EUMQwCq8OJKbg/viewform?embedded=true" loading="lazy" title="Feedback">Das Formular wird geladen …</iframe>
+<p style="color:var(--blass);font-size:14px">Formular lädt nicht? <a href="https://docs.google.com/forms/d/e/1FAIpQLScGwCcfC61z2Bl71Rb1H9_2AK3BhHPni3P2-EUMQwCq8OJKbg/viewform" target="_blank" rel="noopener">Hier direkt öffnen</a>.</p>
 </main>
 <footer><div class="bahn">© 2026 Benjamin Bertl · <a href="/datenschutz.html">Datenschutz</a></div></footer>
-<script>document.getElementById("v").value = new URLSearchParams(location.search).get("v") || "";</script>
 </body>
 </html>
