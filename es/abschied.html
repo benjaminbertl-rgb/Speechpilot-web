@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lástima que te vayas — SpeechPilot</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="stylesheet" href="/stil.css">
+<style>
+.wahl{display:block;padding:10px 14px;margin:0 0 8px;border:1px solid var(--rand);border-radius:9px;cursor:pointer}
+.wahl:has(input:checked){border-color:var(--akzent);background:rgba(255,255,255,.04)}
+textarea,input[type=email]{width:100%;background:var(--platte);color:var(--hell);border:1px solid var(--rand);border-radius:9px;padding:10px 12px;font:inherit;margin:4px 0 14px}
+textarea{min-height:90px;resize:vertical}
+button{border:0;cursor:pointer;font:inherit}
+.falle{position:absolute;left:-9999px}
+.meldung{display:none} .meldung:target{display:block}
+</style>
+</head>
+<body>
+<header><div class="bahn">
+  <a class="marke" href="/es/"><img src="/favicon-32.png" alt="" width="22" height="22">SpeechPilot</a>
+  <nav><span class="sprachen"><a href="/abschied.html" hreflang="de">DE</a><a href="/en/abschied.html" hreflang="en">EN</a><a class="aktiv" href="/es/abschied.html" hreflang="es">ES</a></span></nav>
+</div></header>
+<main class="bahn">
+<h1>Lástima que te vayas</h1>
+<p class="vorspann">Una pregunta, diez segundos, sin cuenta: ¿por qué quitaste SpeechPilot? Así mejora para los siguientes.</p>
+<p class="kachel meldung" id="danke">¡Gracias! Tu respuesta ha llegado. Si cambias de idea: SpeechPilot sigue en la Chrome Web Store.</p>
+<p class="kachel meldung" id="fehler">No ha funcionado. Escribe directamente a contact@speechpilot.vip.</p>
+<!-- Ziel: /feedback.php (Mail an contact@). Die Version kommt aus
+     setUninstallURL (?v=...) und geht per Skript unten mit. -->
+<form method="post" action="/feedback.php">
+  <label class="wahl"><input type="radio" name="grund" value="erkennung"> El reconocimiento era impreciso o demasiado lento</label>
+  <label class="wahl"><input type="radio" name="grund" value="kompliziert"> Demasiado complicado — no me aclaré</label>
+  <label class="wahl"><input type="radio" name="grund" value="unnoetig"> Ya no lo necesito / solo quería probarlo</label>
+  <label for="text">¿Algo más? (opcional)</label>
+  <textarea id="text" name="text" maxlength="2000"></textarea>
+  <label for="mail">Tu correo, si quieres respuesta (opcional)</label>
+  <input type="email" id="mail" name="mail" maxlength="200">
+  <input class="falle" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <input type="hidden" name="sprache" value="es">
+  <input type="hidden" name="v" id="v">
+  <button class="knopf" type="submit">Enviar</button>
+</form>
+</main>
+<footer><div class="bahn">© 2026 Benjamin Bertl · <a href="/es/datenschutz.html">Privacidad</a></div></footer>
+<script>document.getElementById("v").value = new URLSearchParams(location.search).get("v") || "";</script>
+</body>
+</html>
